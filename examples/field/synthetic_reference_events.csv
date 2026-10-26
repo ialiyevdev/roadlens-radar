@@ -1,0 +1,8 @@
+id,timestamp_s,interval_end_s,speed,units,method,provenance,independent,instrument_id,uncertainty_kmh,quality_notes
+reference-001,110.5,,30,km/h,Synthetic independent arithmetic fixture; no field instrument,synthetic,true,,,"Generated numbers exercise workflow only, not roadway accuracy."
+reference-002,120.5,,40,km/h,Synthetic independent arithmetic fixture; no field instrument,synthetic,true,,,"Generated numbers exercise workflow only, not roadway accuracy."
+reference-003,130.5,,50,km/h,Synthetic independent arithmetic fixture; no field instrument,synthetic,true,,,"Generated numbers exercise workflow only, not roadway accuracy."
+reference-004,140.5,,60,km/h,Synthetic independent arithmetic fixture; no field instrument,synthetic,true,,,"Generated numbers exercise workflow only, not roadway accuracy."
+reference-005,150.5,,70,km/h,Synthetic independent arithmetic fixture; no field instrument,synthetic,true,,,"Generated numbers exercise workflow only, not roadway accuracy."
+reference-006,160.5,,80,km/h,Synthetic independent arithmetic fixture; no field instrument,synthetic,true,,,"Generated numbers exercise workflow only, not roadway accuracy."
+reference-unmatched,175,,45,km/h,Synthetic independent arithmetic fixture,synthetic,true,,,

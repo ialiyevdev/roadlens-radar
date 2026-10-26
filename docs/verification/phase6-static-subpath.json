@@ -1,0 +1,190 @@
+{
+  "scope": "Final static build served under /roadlens-radar/ with Python API stopped",
+  "layouts": [
+    {
+      "step": 1,
+      "viewport": 390,
+      "width": 390,
+      "title": "Vehicle detection"
+    },
+    {
+      "step": 2,
+      "viewport": 390,
+      "width": 390,
+      "title": "Multi-object tracking"
+    },
+    {
+      "step": 3,
+      "viewport": 390,
+      "width": 390,
+      "title": "Perspective calibration"
+    },
+    {
+      "step": 4,
+      "viewport": 390,
+      "width": 390,
+      "title": "Virtual speed gates"
+    },
+    {
+      "step": 5,
+      "viewport": 390,
+      "width": 390,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "step": 6,
+      "viewport": 390,
+      "width": 390,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "step": 7,
+      "viewport": 390,
+      "width": 390,
+      "title": "Vehicle classification"
+    },
+    {
+      "step": 8,
+      "viewport": 390,
+      "width": 390,
+      "title": "Monitoring zones"
+    },
+    {
+      "step": 9,
+      "viewport": 390,
+      "width": 390,
+      "title": "Traffic analytics"
+    },
+    {
+      "step": 10,
+      "viewport": 390,
+      "width": 390,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "step": 1,
+      "viewport": 768,
+      "width": 768,
+      "title": "Vehicle detection"
+    },
+    {
+      "step": 2,
+      "viewport": 768,
+      "width": 768,
+      "title": "Multi-object tracking"
+    },
+    {
+      "step": 3,
+      "viewport": 768,
+      "width": 768,
+      "title": "Perspective calibration"
+    },
+    {
+      "step": 4,
+      "viewport": 768,
+      "width": 768,
+      "title": "Virtual speed gates"
+    },
+    {
+      "step": 5,
+      "viewport": 768,
+      "width": 768,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "step": 6,
+      "viewport": 768,
+      "width": 768,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "step": 7,
+      "viewport": 768,
+      "width": 768,
+      "title": "Vehicle classification"
+    },
+    {
+      "step": 8,
+      "viewport": 768,
+      "width": 768,
+      "title": "Monitoring zones"
+    },
+    {
+      "step": 9,
+      "viewport": 768,
+      "width": 768,
+      "title": "Traffic analytics"
+    },
+    {
+      "step": 10,
+      "viewport": 768,
+      "width": 768,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "step": 1,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Vehicle detection"
+    },
+    {
+      "step": 2,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Multi-object tracking"
+    },
+    {
+      "step": 3,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Perspective calibration"
+    },
+    {
+      "step": 4,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Virtual speed gates"
+    },
+    {
+      "step": 5,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "step": 6,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "step": 7,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Vehicle classification"
+    },
+    {
+      "step": 8,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Monitoring zones"
+    },
+    {
+      "step": 9,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Traffic analytics"
+    },
+    {
+      "step": 10,
+      "viewport": 1440,
+      "width": 1440,
+      "title": "Validation & benchmarking"
+    }
+  ],
+  "downloads": 6,
+  "chartTogglePassed": true,
+  "apiRequests": 0,
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,378 @@
+.field-workspace,
+.field-stack {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+.field-workspace > * {
+  min-width: 0;
+}
+.field-panel {
+  padding: 24px;
+  min-width: 0;
+}
+.field-panel h2 {
+  margin: 0 0 9px;
+  font-size: 16px;
+}
+.field-panel h3 {
+  font-size: 13px;
+  margin: 23px 0 13px;
+}
+.field-panel p {
+  line-height: 1.65;
+}
+.field-panel fieldset,
+.field-metadata {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.field-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+.field-wide {
+  grid-column: 1/-1;
+}
+.field-workspace label {
+  font-size: 11px;
+  color: #b6c4ae;
+  line-height: 1.6;
+  min-width: 0;
+}
+.field-workspace input:not([type="checkbox"]):not([type="file"]),
+.field-workspace select,
+.field-workspace textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-top: 6px;
+  border: 1px solid #35403b;
+  border-radius: 5px;
+  padding: 9px 10px;
+  background: #13191b;
+  color: #e8ebea;
+  font: inherit;
+  font-size: 12px;
+}
+.field-workspace textarea {
+  resize: vertical;
+  min-height: 66px;
+}
+.field-workspace small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.field-workspace input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+.field-workspace .field-check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  line-height: 1.5;
+}
+.field-check input {
+  flex: none;
+}
+.field-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+.field-actions .text-button {
+  margin-left: 0;
+}
+.field-upload {
+  align-self: end;
+  text-align: center;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.field-upload.disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+.field-evidence-notice {
+  border: 1px solid #504b34;
+  background: #24251d;
+  padding: 17px 20px;
+  border-radius: 8px;
+  color: #dddfbd;
+}
+.field-evidence-notice strong {
+  font-size: 13px;
+}
+.field-evidence-notice p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #b8bba8;
+  line-height: 1.65;
+}
+.field-session-picker {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 14px;
+  align-items: end;
+}
+.field-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 13px;
+}
+.field-tabs button {
+  border: 1px solid #35403b;
+  background: #181f21;
+  color: #aeb8b1;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.field-tabs button[aria-selected="true"] {
+  background: #293726;
+  border-color: #53644b;
+  color: #d6eec4;
+}
+.field-state {
+  font-size: 10px;
+  padding: 6px 9px;
+  border-radius: 4px;
+  border: 1px solid #394943;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.field-state.uncertain {
+  background: #312c1e;
+  color: #dbc38a;
+  border-color: #544728;
+}
+.field-state.aligned {
+  background: #233124;
+  color: #bad6a5;
+}
+.field-quality-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 0;
+}
+.field-quality-grid div {
+  min-width: 0;
+}
+.field-quality-grid dt {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.field-quality-grid dd {
+  margin: 4px 0 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+.field-overview {
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.field-overview .mono {
+  font-size: 10px;
+}
+.field-empty {
+  padding: 26px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.field-delete-prompt {
+  margin-top: 16px;
+  border: 1px solid #6b463a;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.field-delete-prompt button + button {
+  margin-left: 14px;
+}
+.field-anchor-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 18px;
+  align-items: end;
+}
+.field-anchor-form .button {
+  align-self: end;
+}
+.field-timeline {
+  padding: 20px;
+  min-width: 0;
+}
+.field-timeline h3 {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+.field-timeline p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.field-timeline svg,
+.field-signed-chart svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.field-timeline text,
+.field-signed-chart text {
+  fill: #9eaaa4;
+  font:
+    11px "Segoe UI",
+    sans-serif;
+}
+.field-match-line {
+  stroke: #5f7367;
+  stroke-width: 1;
+  opacity: 0.5;
+}
+.field-match-line.matched {
+  stroke: #b0d697;
+  opacity: 0.8;
+}
+.field-match-line.ambiguous {
+  stroke: #ddbd76;
+  stroke-dasharray: 5 4;
+}
+.field-matches td {
+  min-width: 160px;
+}
+.field-matches td:first-child {
+  min-width: 120px;
+  max-width: 210px;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+.field-matches .field-check {
+  margin-top: 8px;
+  max-width: 190px;
+  font-size: 10px;
+}
+.field-matches input,
+.field-matches select {
+  min-width: 160px !important;
+}
+.field-matches input[type="checkbox"] {
+  min-width: auto !important;
+}
+.field-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.field-session-checklist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 15px 0 24px;
+}
+.field-session-checklist .field-check {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #151b1d;
+}
+.field-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.field-panel details {
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.field-panel details summary {
+  cursor: pointer;
+}
+.field-workspace table {
+  min-width: 600px;
+}
+.field-workspace td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.field-workspace .table-scroll {
+  max-width: 100%;
+}
+@media (max-width: 1050px) {
+  .field-session-picker {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .field-session-picker label {
+    grid-column: 1/-1;
+  }
+  .field-quality-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .field-anchor-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .field-panel {
+    padding: 18px 13px;
+  }
+  .field-form-grid,
+  .field-filter-grid,
+  .field-session-checklist,
+  .field-evidence-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .field-session-picker {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .field-session-picker label {
+    grid-column: auto;
+  }
+  .field-anchor-form {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .field-actions > .button,
+  .field-actions > .field-upload {
+    width: 100%;
+  }
+  .field-quality-grid {
+    gap: 15px 10px;
+  }
+  .field-tabs button {
+    flex: 1 1 42%;
+    padding: 10px 8px;
+  }
+  .field-workspace .panel-heading {
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .field-timeline {
+    padding: 16px 10px;
+  }
+  .field-evidence-notice {
+    padding: 15px;
+  }
+  .field-session-picker button {
+    width: 100%;
+  }
+}

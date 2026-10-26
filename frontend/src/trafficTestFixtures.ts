@@ -1,0 +1,155 @@
+import { newTrafficConfiguration } from "./trafficTypes";
+import type {
+  TrafficAnalysis,
+  TrafficArtifact,
+  TrafficOverlays,
+} from "./trafficTypes";
+import { initialSession } from "./useSession";
+import type { FrozenFrame, Session } from "./types";
+
+export const geometry = {
+  width: 640,
+  height: 480,
+  rotation: 0,
+  mirrored: false,
+  crop: null,
+};
+export const trafficConfig = {
+  ...newTrafficConfiguration("video:fixture", geometry),
+  id: "config-1",
+  lines: [
+    {
+      id: "line-1",
+      label: "North approach",
+      start: [20, 240] as [number, number],
+      end: [620, 240] as [number, number],
+      positive_label: "Northbound",
+      negative_label: "Southbound",
+      hysteresis_px: 3,
+    },
+  ],
+};
+export const trafficFrame: FrozenFrame = {
+  frame_id: "frame-1",
+  image_url: "/api/calibration/frame/frame-1",
+  source_id: "video:fixture",
+  geometry,
+  session_id: "observation-1",
+};
+export const trafficSession: Session = {
+  ...initialSession,
+  state: "paused",
+  session_id: "observation-1",
+  source_id: "video:fixture",
+  source_type: "video",
+  frame_index: 30,
+  width: 640,
+  height: 480,
+  geometry,
+  timestamp_s: 3,
+};
+export const trafficOverlays: TrafficOverlays = {
+  track_ids: true,
+  vehicle_classes: true,
+  traffic_lines: true,
+  traffic_zones: true,
+  direction_indicators: false,
+  zone_occupancy: true,
+};
+export const trafficAnalysis: TrafficAnalysis = {
+  schema_version: 1,
+  interval_minutes: 1,
+  summary: {
+    total_crossings: 2,
+    counted_events: 2,
+    suppressed_events: 1,
+    coverage_seconds: 30,
+    normalized_crossings_per_minute: 4,
+    normalized_crossings_per_hour: 240,
+    most_common_category: "car",
+    valid_speed_count: 0,
+    mean_speed_kmh: null,
+    current_zone_occupancy: 1,
+    visible_tracks: 2,
+    peak_interval_count: 2,
+  },
+  events: [
+    {
+      id: "event-1",
+      session_id: "observation-1",
+      track_id: 1,
+      timestamp_s: 2,
+      line_id: "line-1",
+      line_label: "North approach",
+      direction: "positive",
+      direction_label: "Northbound",
+      category: "car",
+      status: "counted",
+      diagnostic_reasons: [],
+      class_score: 0.88,
+    },
+    {
+      id: "event-2",
+      session_id: "observation-1",
+      track_id: 2,
+      timestamp_s: 3,
+      line_id: "line-1",
+      line_label: "North approach",
+      direction: "negative",
+      direction_label: "Southbound",
+      category: "truck",
+      status: "suppressed",
+      diagnostic_reasons: ["possible_fragmented_identity"],
+      class_score: 0.75,
+    },
+  ],
+  classes: [{ category: "car", count: 2, fraction: 1 }],
+  directions: [
+    { direction: "positive", direction_label: "Northbound", count: 2 },
+  ],
+  flow: [
+    {
+      session_id: "observation-1",
+      configuration_id: "config-1",
+      start_s: 0,
+      end_s: 60,
+      coverage_seconds: 30,
+      count: 2,
+      normalized_crossings_per_minute: 4,
+      normalized_crossings_per_hour: 240,
+      complete_window: false,
+      cumulative_count: 2,
+      direction_counts: { positive: 2 },
+      class_counts: { car: 2 },
+    },
+  ],
+  zones: [],
+  speeds: {
+    status: "valid",
+    n: 0,
+    mean_kmh: null,
+    median_kmh: null,
+    minimum_kmh: null,
+    maximum_kmh: null,
+    p85_kmh: null,
+    standard_deviation_kmh: null,
+    distribution: [],
+    by_class: [],
+    by_direction: [],
+    by_interval: [],
+  },
+  comparisons: [],
+  quality: [],
+  occupancy: [],
+  warnings: ["Partial observation windows are not hourly volume predictions."],
+};
+export const trafficArtifact: TrafficArtifact = {
+  id: "archive-1",
+  session_id: "observation-1",
+  name: "Synthetic approach",
+  source_id: "video:fixture",
+  provenance: "synthetic",
+  configuration: trafficConfig,
+  events: trafficAnalysis.events,
+  summary: trafficAnalysis.summary,
+};

@@ -1,0 +1,28 @@
+.camera-intrinsics { display: grid; gap: 20px; min-width: 0; }
+.camera-intrinsics p, .camera-intrinsics li { color: var(--text-muted, #a8b39f); font-size: 12px; line-height: 1.7; }
+.camera-intro > p { margin: 12px 20px; }
+.camera-intro > .panel-heading { padding: 20px 20px 0; }
+.camera-coordinate-status { padding: 10px 14px; border-left: 2px solid #a2bc71; background: #192018; }
+.camera-layout, .camera-preview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; min-width: 0; }
+.camera-form { padding: 18px; min-width: 0; display: flex; flex-direction: column; align-items: stretch; gap: 14px; }
+.camera-form .panel-heading { padding: 0 0 12px; }
+.camera-form label { display: grid; gap: 7px; font-size: 12px; color: #d4dfcd; min-width: 0; }
+.camera-form input:not([type=checkbox]), .camera-form select, .camera-form textarea { width: 100%; min-width: 0; box-sizing: border-box; background: #141b12; border: 1px solid #374130; border-radius: 4px; color: #e0e8d9; padding: 10px; font: inherit; }
+.camera-form input[type=file] { font-size: 11px; }
+.camera-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.camera-form .camera-checkbox { display: flex; gap: 9px; line-height: 1.6; align-items: flex-start; }
+.camera-checkbox input { margin-top: 4px; flex-shrink: 0; }
+.camera-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.camera-actions .button { min-width: 0; white-space: normal; }
+.camera-diagnostics { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 10px; font-size: 12px; }
+.camera-diagnostics dt { color: #a8b39f; }
+.camera-diagnostics dd { margin: 0; overflow-wrap: anywhere; }
+.camera-form ul { padding-left: 18px; }
+.camera-form details { font-size: 12px; }
+.camera-form summary { cursor: pointer; padding: 10px 0; }
+.camera-preview-panel { padding: 18px; }
+.camera-preview-grid figure { margin: 0; min-width: 0; }
+.camera-preview-grid img { width: 100%; display: block; border: 1px solid #374130; }
+.camera-preview-grid figcaption { padding-top: 8px; font-size: 12px; color: #a8b39f; }
+@media (max-width: 900px) { .camera-layout { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 560px) { .camera-form, .camera-preview-panel { padding: 14px; } .camera-preview-grid, .camera-form-grid { grid-template-columns: minmax(0, 1fr); } .camera-intro > p { margin-inline: 14px; } .camera-actions > * { flex: 1 1 100%; } }

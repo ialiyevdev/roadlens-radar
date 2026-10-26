@@ -1,0 +1,2710 @@
+{
+  "schema_version": 1,
+  "provenance": "synthetic",
+  "suite_version": "1.0",
+  "generated_at_utc": "2026-10-23T18:01:44.760820+00:00",
+  "hardware": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_cpus": 12,
+    "python": "3.13.9"
+  },
+  "methodology": {
+    "matching": "Per-frame global maximum-cardinality, maximum-IoU assignment of currently observed tracker boxes to independently generated truth boxes; IoU >= 0.5. Lost tracks are not observations.",
+    "identity_switches": "A truth identity receives a different tracker ID from its last matched observation, including after a gap. Counts are ground-truth based, unlike live potential_id_switches.",
+    "fragmentations": "A previously matched truth identity becomes unmatched and later matched again while still in the scenario. Expected missing detections count too.",
+    "timing": "Source sequences identical; one untimed evaluation plus 5 timing repetitions per tracker, after eight warm-up updates. perf_counter_ns brackets update() only; excludes detection, evaluation, rendering and HTTP. Mean/P95 pool update durations; P95 uses linear interpolation. Baseline runs first; thermal/scheduler/order effects remain.",
+    "limitations": "Synthetic boxes and scripted omissions only; no detector, physical camera, labeled real footage, appearance re-identification or real-world accuracy claim. IDF1 is not implemented. Baseline suspicion counters are unavailable and reported as zero. Long-occlusion ID replacement is expected. Ambiguous synthetic overlap can remain unresolved even with a stable ID."
+  },
+  "baseline": {
+    "name": "Phase 2 greedy motion + IoU",
+    "frames": 352,
+    "ground_truth_observations": 484,
+    "matched_observations": 466,
+    "missed_observations": 18,
+    "id_switches": 5,
+    "fragments": 3,
+    "created_tracks": 19,
+    "confirmed_tracks": 16,
+    "potential_id_switches": 0,
+    "fragmentation_suspicions": 0,
+    "mean_update_ms": 0.00793528409090909,
+    "p95_update_ms": 0.0124,
+    "runtime_ms": 13.966099999999999,
+    "scenarios": [
+      {
+        "name": "constant_motion",
+        "description": "One box at a constant 40 pixels/source-second.",
+        "frames": 35,
+        "ground_truth_observations": 35,
+        "matched_observations": 35,
+        "missed_observations": 0,
+        "id_switches": 0,
+        "fragments": 0,
+        "created_tracks": 1,
+        "confirmed_tracks": 1,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.005633142857142857,
+        "p95_update_ms": 0.006129999999999998,
+        "runtime_ms": 0.9858,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "parallel_vehicles",
+        "description": "Two nearby same-class vehicles with equal motion and distinct boxes.",
+        "frames": 35,
+        "ground_truth_observations": 70,
+        "matched_observations": 70,
+        "missed_observations": 0,
+        "id_switches": 0,
+        "fragments": 0,
+        "created_tracks": 2,
+        "confirmed_tracks": 2,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.011690285714285714,
+        "p95_update_ms": 0.01313,
+        "runtime_ms": 2.0458,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "crossing_paths",
+        "description": "Opposing vehicles cross with an 8-pixel vertical offset; no exact duplicate boxes.",
+        "frames": 35,
+        "ground_truth_observations": 70,
+        "matched_observations": 70,
+        "missed_observations": 0,
+        "id_switches": 0,
+        "fragments": 0,
+        "created_tracks": 2,
+        "confirmed_tracks": 2,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.011441714285714286,
+        "p95_update_ms": 0.012859999999999996,
+        "runtime_ms": 2.0023,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "short_occlusion",
+        "description": "One vehicle has four missing detections, shorter than the one-second TTL.",
+        "frames": 35,
+        "ground_truth_observations": 35,
+        "matched_observations": 31,
+        "missed_observations": 4,
+        "id_switches": 0,
+        "fragments": 1,
+        "created_tracks": 1,
+        "confirmed_tracks": 1,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.0068377142857142855,
+        "p95_update_ms": 0.0087,
+        "runtime_ms": 1.1966,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "long_occlusion",
+        "description": "Twelve missing detections exceed TTL; a new ID is expected on return.",
+        "frames": 35,
+        "ground_truth_observations": 35,
+        "matched_observations": 23,
+        "missed_observations": 12,
+        "id_switches": 1,
+        "fragments": 1,
+        "created_tracks": 2,
+        "confirmed_tracks": 2,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.004086857142857143,
+        "p95_update_ms": 0.0052,
+        "runtime_ms": 0.7152,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "box_jitter",
+        "description": "Deterministic contact-point jitter up to five pixels around true motion.",
+        "frames": 35,
+        "ground_truth_observations": 35,
+        "matched_observations": 35,
+        "missed_observations": 0,
+        "id_switches": 0,
+        "fragments": 0,
+        "created_tracks": 1,
+        "confirmed_tracks": 1,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.004931428571428571,
+        "p95_update_ms": 0.0052,
+        "runtime_ms": 0.863,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "different_speeds",
+        "description": "A faster vehicle overtakes a slower vehicle with a small lane offset.",
+        "frames": 35,
+        "ground_truth_observations": 70,
+        "matched_observations": 70,
+        "missed_observations": 0,
+        "id_switches": 0,
+        "fragments": 0,
+        "created_tracks": 2,
+        "confirmed_tracks": 2,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.012436000000000001,
+        "p95_update_ms": 0.01373,
+        "runtime_ms": 2.1763,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "irregular_timestamps",
+        "description": "Constant motion sampled at irregular source intervals; no FPS substitution.",
+        "frames": 35,
+        "ground_truth_observations": 35,
+        "matched_observations": 35,
+        "missed_observations": 0,
+        "id_switches": 0,
+        "fragments": 0,
+        "created_tracks": 1,
+        "confirmed_tracks": 1,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.005064571428571429,
+        "p95_update_ms": 0.0054,
+        "runtime_ms": 0.8863,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.04,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.15,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.38,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.45,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.61,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.65,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.76,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.99,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.06,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.22,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.26,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.37,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.6700000000000002,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.83,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.87,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9800000000000002,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2100000000000004,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2800000000000002,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4400000000000004,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4800000000000004,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5900000000000003,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8200000000000003,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.89,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0500000000000003,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0900000000000003,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.43,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.66,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.81,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 4.04,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 4.11,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "ambiguous_overlap",
+        "description": "Closely overlapping opposing boxes with intermittent detections and jitter.",
+        "frames": 35,
+        "ground_truth_observations": 70,
+        "matched_observations": 68,
+        "missed_observations": 2,
+        "id_switches": 2,
+        "fragments": 1,
+        "created_tracks": 2,
+        "confirmed_tracks": 2,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.011836,
+        "p95_update_ms": 0.0133,
+        "runtime_ms": 2.0713,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          }
+        ]
+      },
+      {
+        "name": "entry_exit",
+        "description": "Distinct objects enter and exit; absence is not treated as a continuing identity.",
+        "frames": 35,
+        "ground_truth_observations": 25,
+        "matched_observations": 25,
+        "missed_observations": 0,
+        "id_switches": 0,
+        "fragments": 0,
+        "created_tracks": 2,
+        "confirmed_tracks": 2,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.005285142857142857,
+        "p95_update_ms": 0.008989999999999995,
+        "runtime_ms": 0.9249,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 1.2,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.3,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.4,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.5,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.6,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 1.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 2.0,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 2.1,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 2.2,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.3,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.4,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.5,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.6,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.7,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.8,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 2.9,
+            "ground_truth_count": 1,
+            "observed_tracks": 1,
+            "active_tracks": 1,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 3.0,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 3.1,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 3.2,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 3.3,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          },
+          {
+            "timestamp_s": 3.4,
+            "ground_truth_count": 0,
+            "observed_tracks": 0,
+            "active_tracks": 0,
+            "lost_tracks": 1
+          }
+        ]
+      },
+      {
+        "name": "greedy_counterexample",
+        "description": "Two feasible matches exist, but the original best-edge-first strategy loses one.",
+        "frames": 2,
+        "ground_truth_observations": 4,
+        "matched_observations": 4,
+        "missed_observations": 0,
+        "id_switches": 2,
+        "fragments": 0,
+        "created_tracks": 3,
+        "confirmed_tracks": 0,
+        "potential_id_switches": 0,
+        "fragmentation_suspicions": 0,
+        "mean_update_ms": 0.00986,
+        "p95_update_ms": 0.016214999999999997,
+        "runtime_ms": 0.0986,
+        "continuity": [
+          {
+            "timestamp_s": 0.0,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 0
+          },
+          {
+            "timestamp_s": 0.1,
+            "ground_truth_count": 2,
+            "observed_tracks": 2,
+            "active_tracks": 2,
+            "lost_tracks": 1
+          }
+        ]
+      }
+    ]
+  }
+}

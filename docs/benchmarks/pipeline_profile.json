@@ -1,0 +1,68 @@
+{
+  "workload": "Actual YOLOX CPU on a repeated CC0 still; synthetic calibration geometry, no physical camera or moving traffic.",
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "logical_cpus": 12,
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9",
+    "opencv": "4.14.0",
+    "opencv_threads": 12
+  },
+  "frames": 12,
+  "warm_up_frames": 1,
+  "input_size": 640,
+  "image_geometry": [
+    640,
+    360
+  ],
+  "fixture_sha256": "9e18f000d1ab28d7415f719e48bdba0753188a42841be5a5f606d529a9fcfdc2",
+  "detection_counts": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "timings": {
+    "detection_ms": {
+      "mean": 309.31818333556294,
+      "median": 193.0439500065404,
+      "p95": 820.7123299973312
+    },
+    "tracking_ms": {
+      "mean": 0.4495666665510119,
+      "median": 0.18480000289855525,
+      "p95": 1.7015350022120388
+    },
+    "projection_ms": {
+      "mean": 0.6872250038820008,
+      "median": 0.29265001649037004,
+      "p95": 2.472360009414842
+    },
+    "gate_events_ms": {
+      "mean": 0.08930833549432766,
+      "median": 0.05469999450724572,
+      "p95": 0.2599899882625323
+    },
+    "render_encode_ms": {
+      "mean": 3.1884083364275284,
+      "median": 1.5806500014150515,
+      "p95": 10.458279998420037
+    },
+    "total_ms": {
+      "mean": 314.4722000033653,
+      "median": 195.37795000360347,
+      "p95": 838.1509150000049
+    }
+  },
+  "effective_processed_fps": 3.179865936847438,
+  "dropped_frames": 0,
+  "limits": "In-memory sequential replay; excludes source decode, camera, HTTP and browser. Zero drops are by construction, not a live performance claim. Synthetic geometry establishes no metric scale for this photograph."
+}

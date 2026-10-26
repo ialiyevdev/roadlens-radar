@@ -1,0 +1,22 @@
+{
+  "evidence": "synthetic shapes, manually scripted predictions; not model inference or physical roadway data",
+  "source_sha256": "36f4306a9a8d414f8ce5ae735086ebd6f0c0855426553445a9b346f47f280fce",
+  "metrics": {
+    "annotated_vehicles": 2,
+    "reviewed_frames": 7,
+    "scored_frames": 7,
+    "predicted_frames": 5,
+    "matched_observations": 4,
+    "missed_observations": 1,
+    "false_positive_observations": 1,
+    "id_switches": 1,
+    "fragments": 1,
+    "limitations": [
+      "Only reviewed frames and visible ground-truth boxes are scored; full occlusions without boxes are excluded.",
+      "Global category-consistent box assignment uses IoU > 0.5; it cannot resolve visually indistinguishable overlapping boxes.",
+      "An ID switch is a changed matched prediction ID for the same manual identity. A fragment is matched, visibly missed, then matched again.",
+      "These are annotation-conditioned counts, not IDF1 or evidence of speed accuracy.",
+      "No recorded proposal configuration: imported prediction completeness and tracker settings require manual verification."
+    ]
+  }
+}

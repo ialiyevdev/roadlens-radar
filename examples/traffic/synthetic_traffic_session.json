@@ -1,0 +1,1631 @@
+{
+  "schema_version": 1,
+  "id": "00000000-0000-0000-0000-00000000138d",
+  "session_id": "00000000-0000-0000-0000-00000000138d",
+  "source_id": "synthetic:phase5-trajectories",
+  "provenance": "synthetic",
+  "configuration": {
+    "id": "synthetic-main",
+    "name": "SYNTHETIC counting configuration",
+    "source_id": "synthetic:phase5-trajectories",
+    "geometry": {
+      "width": 200,
+      "height": 120,
+      "rotation": 0,
+      "mirrored": false,
+      "crop": null,
+      "coordinate_space": "source",
+      "intrinsic_profile_id": null
+    },
+    "calibration_id": null,
+    "lines": [
+      {
+        "id": "main",
+        "label": "Synthetic main line",
+        "start": [
+          0.0,
+          60.0
+        ],
+        "end": [
+          200.0,
+          60.0
+        ],
+        "positive_label": "Down image",
+        "negative_label": "Up image",
+        "hysteresis_px": 3.0
+      }
+    ],
+    "zones": [
+      {
+        "id": "approach",
+        "label": "Synthetic approach",
+        "points": [
+          [
+            20.0,
+            20.0
+          ],
+          [
+            180.0,
+            20.0
+          ],
+          [
+            180.0,
+            100.0
+          ],
+          [
+            20.0,
+            100.0
+          ]
+        ],
+        "coordinate_space": "image",
+        "hysteresis": 3.0
+      }
+    ],
+    "max_gap_s": 1.0,
+    "min_track_hits": 3,
+    "class_min_observations": 3,
+    "class_min_confidence": 0.55,
+    "class_min_margin": 0.15,
+    "identity_suppression_s": 0.75,
+    "identity_suppression_px": 12.0,
+    "stationary_window_s": 3.0,
+    "stationary_radius_px": 4.0,
+    "slow_speed_kmh": 5.0,
+    "occupancy_moderate": 3,
+    "occupancy_high": 8
+  },
+  "configurations": [
+    {
+      "id": "synthetic-main",
+      "name": "SYNTHETIC counting configuration",
+      "source_id": "synthetic:phase5-trajectories",
+      "geometry": {
+        "width": 200,
+        "height": 120,
+        "rotation": 0,
+        "mirrored": false,
+        "crop": null,
+        "coordinate_space": "source",
+        "intrinsic_profile_id": null
+      },
+      "calibration_id": null,
+      "lines": [
+        {
+          "id": "main",
+          "label": "Synthetic main line",
+          "start": [
+            0.0,
+            60.0
+          ],
+          "end": [
+            200.0,
+            60.0
+          ],
+          "positive_label": "Down image",
+          "negative_label": "Up image",
+          "hysteresis_px": 3.0
+        }
+      ],
+      "zones": [
+        {
+          "id": "approach",
+          "label": "Synthetic approach",
+          "points": [
+            [
+              20.0,
+              20.0
+            ],
+            [
+              180.0,
+              20.0
+            ],
+            [
+              180.0,
+              100.0
+            ],
+            [
+              20.0,
+              100.0
+            ]
+          ],
+          "coordinate_space": "image",
+          "hysteresis": 3.0
+        }
+      ],
+      "max_gap_s": 1.0,
+      "min_track_hits": 3,
+      "class_min_observations": 3,
+      "class_min_confidence": 0.55,
+      "class_min_margin": 0.15,
+      "identity_suppression_s": 0.75,
+      "identity_suppression_px": 12.0,
+      "stationary_window_s": 3.0,
+      "stationary_radius_px": 4.0,
+      "slow_speed_kmh": 5.0,
+      "occupancy_moderate": 3,
+      "occupancy_high": 8
+    }
+  ],
+  "events": [
+    {
+      "id": "fff369a8-073c-44f6-ae1c-0b30493ef2d0",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 1,
+      "timestamp_s": 3.571428571428571,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "car",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "car",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "car": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        45.0,
+        60.0
+      ],
+      "measured_speed_kmh": 28,
+      "speed_measurement_id": "synthetic-speed-1"
+    },
+    {
+      "id": "c6985c91-e3fc-4717-9aac-15cf1ba0338b",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 2,
+      "timestamp_s": 13.571428571428571,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "truck",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "truck",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "truck": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        65.0,
+        60.0
+      ],
+      "measured_speed_kmh": 36,
+      "speed_measurement_id": "synthetic-speed-2"
+    },
+    {
+      "id": "7d09105d-b1f7-444b-9d80-751863d52740",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 3,
+      "timestamp_s": 23.571428571428573,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "bus",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "bus",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "bus": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        85.0,
+        60.0
+      ],
+      "measured_speed_kmh": null
+    },
+    {
+      "id": "e29c942b-be81-4113-b1d6-389e9536237e",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 4,
+      "timestamp_s": 33.57142857142857,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "motorcycle",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "motorcycle",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "motorcycle": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        105.0,
+        60.0
+      ],
+      "measured_speed_kmh": 32,
+      "speed_measurement_id": "synthetic-speed-4"
+    },
+    {
+      "id": "b7ffb010-c695-4811-8f6c-418c5592004e",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 5,
+      "timestamp_s": 43.57142857142857,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "car",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "car",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "car": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        125.0,
+        60.0
+      ],
+      "measured_speed_kmh": null
+    },
+    {
+      "id": "9bdb137c-d9c7-4ebc-8db6-d40bd4e14ea4",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 6,
+      "timestamp_s": 53.57142857142857,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "unknown",
+      "class_score": 0.0,
+      "class_observations": 9,
+      "raw_category": "unsupported",
+      "raw_confidence": 0.9,
+      "class_evidence": {},
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap",
+        "class_evidence_insufficient_or_uncertain"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        145.0,
+        60.0
+      ],
+      "measured_speed_kmh": 18,
+      "speed_measurement_id": "synthetic-speed-6"
+    }
+  ],
+  "zone_events": [
+    {
+      "id": "861c20ae-b399-4a03-bb7d-7a9bc918e8aa",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 1,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 1.0,
+      "kind": "entry",
+      "dwell_s": null,
+      "category": "car",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": []
+    },
+    {
+      "id": "3a48aab1-171d-4278-aec1-e2879f116f29",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 1,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 7.0,
+      "kind": "exit",
+      "dwell_s": 5.5,
+      "category": "car",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": [
+        "observed_inside_dwell_lower_bound"
+      ]
+    },
+    {
+      "id": "94b611c8-2e11-4c6b-b349-be08e97fa097",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 2,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 11.0,
+      "kind": "entry",
+      "dwell_s": null,
+      "category": "truck",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": []
+    },
+    {
+      "id": "a45b4af6-0773-4f5f-b481-886517930c0b",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 2,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 17.0,
+      "kind": "exit",
+      "dwell_s": 5.5,
+      "category": "truck",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": [
+        "observed_inside_dwell_lower_bound"
+      ]
+    },
+    {
+      "id": "d9c256ca-1470-4ca0-a04c-f1ba2b8b93d8",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 3,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 21.0,
+      "kind": "entry",
+      "dwell_s": null,
+      "category": "bus",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": []
+    },
+    {
+      "id": "b11475fa-d601-40e7-ad1f-605f765166c3",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 3,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 27.0,
+      "kind": "exit",
+      "dwell_s": 5.5,
+      "category": "bus",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": [
+        "observed_inside_dwell_lower_bound"
+      ]
+    },
+    {
+      "id": "32b24422-148f-4f3d-a95a-6f09c567376e",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 4,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 31.0,
+      "kind": "entry",
+      "dwell_s": null,
+      "category": "motorcycle",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": []
+    },
+    {
+      "id": "49fb5437-b87c-4756-a29d-0dde2984642a",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 4,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 37.0,
+      "kind": "exit",
+      "dwell_s": 5.5,
+      "category": "motorcycle",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": [
+        "observed_inside_dwell_lower_bound"
+      ]
+    },
+    {
+      "id": "faf5f012-c0aa-4d5a-826c-0bc9601de985",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 5,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 41.0,
+      "kind": "entry",
+      "dwell_s": null,
+      "category": "car",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": []
+    },
+    {
+      "id": "e85057a2-6b0b-4d24-a948-8bfbbff25ea6",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 5,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 47.0,
+      "kind": "exit",
+      "dwell_s": 5.5,
+      "category": "car",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": [
+        "observed_inside_dwell_lower_bound"
+      ]
+    },
+    {
+      "id": "bd0475a2-8159-490b-a6d3-06219304bead",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 6,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 51.0,
+      "kind": "entry",
+      "dwell_s": null,
+      "category": "unknown",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": []
+    },
+    {
+      "id": "785889ff-347b-4cfb-9497-abd9b379b488",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 6,
+      "zone_id": "approach",
+      "zone_label": "Synthetic approach",
+      "timestamp_s": 57.0,
+      "kind": "exit",
+      "dwell_s": 5.5,
+      "category": "unknown",
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "diagnostic_reasons": [
+        "observed_inside_dwell_lower_bound"
+      ]
+    }
+  ],
+  "occupancy_samples": [
+    {
+      "timestamp_s": 0.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 1.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 2.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 3.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 4.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 5.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 6.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 7.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 8.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 9.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 10.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 11.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 12.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 13.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 14.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 15.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 16.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 17.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 18.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 19.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 20.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 21.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 22.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 23.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 24.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 25.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 26.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 27.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 28.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 29.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 30.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 31.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 32.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 33.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 34.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 35.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 36.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 37.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 38.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 39.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 40.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 41.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 42.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 43.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 44.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 45.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 46.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 47.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 48.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 49.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 50.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 51.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 52.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 53.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 54.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 55.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 56.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 1
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.015
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 57.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.005
+      },
+      "visible_tracks": 1,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 58.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    },
+    {
+      "timestamp_s": 59.0,
+      "configuration_id": "synthetic-main",
+      "zone_occupancy": {
+        "approach": 0
+      },
+      "zone_occupancy_proxy": {
+        "approach": 0.0
+      },
+      "visible_tracks": 0,
+      "stationary_tracks": 0,
+      "slow_tracks": null,
+      "occupancy_level": "low_observed_occupancy",
+      "timestamp_valid": true
+    }
+  ],
+  "coverage": [
+    {
+      "start_s": 0.0,
+      "end_s": 59.5,
+      "configuration_id": "synthetic-main",
+      "source_id": "synthetic:phase5-trajectories",
+      "frame_count": 120
+    }
+  ],
+  "diagnostics": {
+    "processed_frames": 120,
+    "counted_crossings": 6
+  },
+  "summary": {
+    "total_crossings": 6,
+    "suppressed_crossings": 0,
+    "by_class": {
+      "car": 2,
+      "truck": 1,
+      "bus": 1,
+      "motorcycle": 1,
+      "unknown": 1
+    },
+    "by_direction": {
+      "positive": 6
+    },
+    "by_line": {
+      "main": 6
+    },
+    "covered_duration_s": 59.5,
+    "covered_counting_duration_s": 59.5,
+    "zone_summaries": [
+      {
+        "configuration_id": "synthetic-main",
+        "zone_id": "approach",
+        "entries": 6,
+        "exits": 6,
+        "interrupted_visits": 0,
+        "completed_dwell_n": 6,
+        "completed_dwell_s": 33.0
+      }
+    ],
+    "zone_occupancy": {
+      "approach": 0
+    },
+    "zone_occupancy_proxy": {
+      "approach": 0.0
+    },
+    "visible_tracks": 0,
+    "stationary_tracks": 0,
+    "slow_tracks": null,
+    "occupancy_level": "low_observed_occupancy",
+    "timestamp_valid": true
+  },
+  "classifications": {},
+  "profile": {
+    "classification_ms": 0.000100000761449337,
+    "crossing_ms": 0.0,
+    "event_creation_ms": 0.000300002284348011,
+    "zones_ms": 0.0012999953469261527,
+    "update_ms": 0.0028999929782003164
+  },
+  "limits": {
+    "events": 10000,
+    "zone_events": 10000,
+    "occupancy_samples": 5000,
+    "coverage_segments": 10000,
+    "identity_states": 4096,
+    "identity_count_tombstones": 4096,
+    "frame_tracks": 4096,
+    "configurations": 128,
+    "zone_summaries": 2048,
+    "line_summaries": 2048
+  },
+  "limitations": [
+    "Temporary track IDs do not establish unique physical vehicle identity.",
+    "Cross-ID duplicate suppression is a spatial/time heuristic and can miss or merge real crossings.",
+    "Image occupancy sums clipped box areas, caps at one, and can double-count overlap; it is not traffic density.",
+    "Stationary refers to bounded image displacement, not measured real-world speed.",
+    "Zone dwell is observed inside time; interrupted visits are incomplete."
+  ],
+  "name": "SYNTHETIC traffic intelligence example",
+  "description": "Generated moving-shape trajectories and scripted metric-speed values. This is software arithmetic evidence, not camera accuracy.",
+  "started_at": "2026-10-24T09:00:00+00:00",
+  "ended_at": "2026-10-24T09:00:59.500000+00:00",
+  "measurements": [
+    {
+      "id": "synthetic-speed-1",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 1,
+      "timestamp_s": 4.571428571428571,
+      "category": "car",
+      "direction": "A_to_B",
+      "status": "valid",
+      "estimated_speed_kmh": 28,
+      "calibration_id": "synthetic-scripted-road",
+      "independently_validated": false,
+      "reasons": [
+        "SYNTHETIC scripted value for aggregate arithmetic"
+      ]
+    },
+    {
+      "id": "synthetic-speed-2",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 2,
+      "timestamp_s": 14.571428571428571,
+      "category": "truck",
+      "direction": "A_to_B",
+      "status": "valid",
+      "estimated_speed_kmh": 36,
+      "calibration_id": "synthetic-scripted-road",
+      "independently_validated": false,
+      "reasons": [
+        "SYNTHETIC scripted value for aggregate arithmetic"
+      ]
+    },
+    {
+      "id": "synthetic-speed-3",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 3,
+      "timestamp_s": 24.571428571428573,
+      "category": "bus",
+      "direction": "A_to_B",
+      "status": "approximate",
+      "estimated_speed_kmh": 44,
+      "calibration_id": "synthetic-scripted-road",
+      "independently_validated": false,
+      "reasons": [
+        "SYNTHETIC scripted value for aggregate arithmetic"
+      ]
+    },
+    {
+      "id": "synthetic-speed-4",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 4,
+      "timestamp_s": 34.57142857142857,
+      "category": "motorcycle",
+      "direction": "A_to_B",
+      "status": "valid",
+      "estimated_speed_kmh": 32,
+      "calibration_id": "synthetic-scripted-road",
+      "independently_validated": false,
+      "reasons": [
+        "SYNTHETIC scripted value for aggregate arithmetic"
+      ]
+    },
+    {
+      "id": "synthetic-speed-5",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 5,
+      "timestamp_s": 44.57142857142857,
+      "category": "car",
+      "direction": "A_to_B",
+      "status": "rejected",
+      "estimated_speed_kmh": 50,
+      "calibration_id": "synthetic-scripted-road",
+      "independently_validated": false,
+      "reasons": [
+        "SYNTHETIC scripted value for aggregate arithmetic"
+      ]
+    },
+    {
+      "id": "synthetic-speed-6",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 6,
+      "timestamp_s": 54.57142857142857,
+      "category": "unknown",
+      "direction": "A_to_B",
+      "status": "valid",
+      "estimated_speed_kmh": 18,
+      "calibration_id": "synthetic-scripted-road",
+      "independently_validated": false,
+      "reasons": [
+        "SYNTHETIC scripted value for aggregate arithmetic"
+      ]
+    }
+  ]
+}

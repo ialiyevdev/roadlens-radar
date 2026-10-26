@@ -1,0 +1,545 @@
+{
+  "scope": "Local Chromium release verification; no physical camera or independent field reference",
+  "layouts": [
+    {
+      "kind": "static",
+      "step": 1,
+      "viewport": 390,
+      "document": 390,
+      "title": "Vehicle detection"
+    },
+    {
+      "kind": "static",
+      "step": 2,
+      "viewport": 390,
+      "document": 390,
+      "title": "Multi-object tracking"
+    },
+    {
+      "kind": "static",
+      "step": 3,
+      "viewport": 390,
+      "document": 390,
+      "title": "Perspective calibration"
+    },
+    {
+      "kind": "static",
+      "step": 4,
+      "viewport": 390,
+      "document": 390,
+      "title": "Virtual speed gates"
+    },
+    {
+      "kind": "static",
+      "step": 5,
+      "viewport": 390,
+      "document": 390,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "kind": "static",
+      "step": 6,
+      "viewport": 390,
+      "document": 390,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "kind": "static",
+      "step": 7,
+      "viewport": 390,
+      "document": 390,
+      "title": "Vehicle classification"
+    },
+    {
+      "kind": "static",
+      "step": 8,
+      "viewport": 390,
+      "document": 390,
+      "title": "Monitoring zones"
+    },
+    {
+      "kind": "static",
+      "step": 9,
+      "viewport": 390,
+      "document": 390,
+      "title": "Traffic analytics"
+    },
+    {
+      "kind": "static",
+      "step": 10,
+      "viewport": 390,
+      "document": 390,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "kind": "static",
+      "step": 1,
+      "viewport": 768,
+      "document": 768,
+      "title": "Vehicle detection"
+    },
+    {
+      "kind": "static",
+      "step": 2,
+      "viewport": 768,
+      "document": 768,
+      "title": "Multi-object tracking"
+    },
+    {
+      "kind": "static",
+      "step": 3,
+      "viewport": 768,
+      "document": 768,
+      "title": "Perspective calibration"
+    },
+    {
+      "kind": "static",
+      "step": 4,
+      "viewport": 768,
+      "document": 768,
+      "title": "Virtual speed gates"
+    },
+    {
+      "kind": "static",
+      "step": 5,
+      "viewport": 768,
+      "document": 768,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "kind": "static",
+      "step": 6,
+      "viewport": 768,
+      "document": 768,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "kind": "static",
+      "step": 7,
+      "viewport": 768,
+      "document": 768,
+      "title": "Vehicle classification"
+    },
+    {
+      "kind": "static",
+      "step": 8,
+      "viewport": 768,
+      "document": 768,
+      "title": "Monitoring zones"
+    },
+    {
+      "kind": "static",
+      "step": 9,
+      "viewport": 768,
+      "document": 768,
+      "title": "Traffic analytics"
+    },
+    {
+      "kind": "static",
+      "step": 10,
+      "viewport": 768,
+      "document": 768,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "kind": "static",
+      "step": 1,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Vehicle detection"
+    },
+    {
+      "kind": "static",
+      "step": 2,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Multi-object tracking"
+    },
+    {
+      "kind": "static",
+      "step": 3,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Perspective calibration"
+    },
+    {
+      "kind": "static",
+      "step": 4,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Virtual speed gates"
+    },
+    {
+      "kind": "static",
+      "step": 5,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "kind": "static",
+      "step": 6,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "kind": "static",
+      "step": 7,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Vehicle classification"
+    },
+    {
+      "kind": "static",
+      "step": 8,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Monitoring zones"
+    },
+    {
+      "kind": "static",
+      "step": 9,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Traffic analytics"
+    },
+    {
+      "kind": "static",
+      "step": 10,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "kind": "main",
+      "step": 1,
+      "viewport": 390,
+      "document": 390,
+      "title": "Vehicle detection"
+    },
+    {
+      "kind": "main",
+      "step": 2,
+      "viewport": 390,
+      "document": 390,
+      "title": "Multi-object tracking"
+    },
+    {
+      "kind": "main",
+      "step": 3,
+      "viewport": 390,
+      "document": 390,
+      "title": "Perspective calibration"
+    },
+    {
+      "kind": "main",
+      "step": 4,
+      "viewport": 390,
+      "document": 390,
+      "title": "Virtual speed gates"
+    },
+    {
+      "kind": "main",
+      "step": 5,
+      "viewport": 390,
+      "document": 390,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "kind": "main",
+      "step": 6,
+      "viewport": 390,
+      "document": 390,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "kind": "main",
+      "step": 7,
+      "viewport": 390,
+      "document": 390,
+      "title": "Vehicle classification"
+    },
+    {
+      "kind": "main",
+      "step": 8,
+      "viewport": 390,
+      "document": 390,
+      "title": "Monitoring zones"
+    },
+    {
+      "kind": "main",
+      "step": 9,
+      "viewport": 390,
+      "document": 390,
+      "title": "Traffic analytics"
+    },
+    {
+      "kind": "main",
+      "step": 10,
+      "viewport": 390,
+      "document": 390,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "kind": "main",
+      "step": 1,
+      "viewport": 768,
+      "document": 768,
+      "title": "Vehicle detection"
+    },
+    {
+      "kind": "main",
+      "step": 2,
+      "viewport": 768,
+      "document": 768,
+      "title": "Multi-object tracking"
+    },
+    {
+      "kind": "main",
+      "step": 3,
+      "viewport": 768,
+      "document": 768,
+      "title": "Perspective calibration"
+    },
+    {
+      "kind": "main",
+      "step": 4,
+      "viewport": 768,
+      "document": 768,
+      "title": "Virtual speed gates"
+    },
+    {
+      "kind": "main",
+      "step": 5,
+      "viewport": 768,
+      "document": 768,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "kind": "main",
+      "step": 6,
+      "viewport": 768,
+      "document": 768,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "kind": "main",
+      "step": 7,
+      "viewport": 768,
+      "document": 768,
+      "title": "Vehicle classification"
+    },
+    {
+      "kind": "main",
+      "step": 8,
+      "viewport": 768,
+      "document": 768,
+      "title": "Monitoring zones"
+    },
+    {
+      "kind": "main",
+      "step": 9,
+      "viewport": 768,
+      "document": 768,
+      "title": "Traffic analytics"
+    },
+    {
+      "kind": "main",
+      "step": 10,
+      "viewport": 768,
+      "document": 768,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "kind": "main",
+      "step": 1,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Vehicle detection"
+    },
+    {
+      "kind": "main",
+      "step": 2,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Multi-object tracking"
+    },
+    {
+      "kind": "main",
+      "step": 3,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Perspective calibration"
+    },
+    {
+      "kind": "main",
+      "step": 4,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Virtual speed gates"
+    },
+    {
+      "kind": "main",
+      "step": 5,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "kind": "main",
+      "step": 6,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "kind": "main",
+      "step": 7,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Vehicle classification"
+    },
+    {
+      "kind": "main",
+      "step": 8,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Monitoring zones"
+    },
+    {
+      "kind": "main",
+      "step": 9,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Traffic analytics"
+    },
+    {
+      "kind": "main",
+      "step": 10,
+      "viewport": 1440,
+      "document": 1440,
+      "title": "Validation & benchmarking"
+    }
+  ],
+  "keyboard": [
+    {
+      "kind": "static",
+      "key": "Home",
+      "active": "01 Vehicle detection"
+    },
+    {
+      "kind": "static",
+      "key": "ArrowRight",
+      "active": "02 Multi-object tracking"
+    },
+    {
+      "kind": "static",
+      "key": "End",
+      "active": "10 Validation & benchmarking"
+    },
+    {
+      "kind": "static",
+      "key": "ArrowLeft",
+      "active": "09 Traffic analytics"
+    },
+    {
+      "kind": "main",
+      "key": "Home",
+      "active": "01 Vehicle detection"
+    },
+    {
+      "kind": "main",
+      "key": "ArrowRight",
+      "active": "02 Multi-object tracking"
+    },
+    {
+      "kind": "main",
+      "key": "End",
+      "active": "10 Validation & benchmarking"
+    },
+    {
+      "kind": "main",
+      "key": "ArrowLeft",
+      "active": "09 Traffic analytics"
+    }
+  ],
+  "links": [
+    "Camera & video",
+    "Calibration & gates",
+    "Traffic Intelligence",
+    "Validation & benchmarks"
+  ],
+  "downloads": [
+    {
+      "kind": "static",
+      "name": "Synthetic traffic session",
+      "parsed": true
+    },
+    {
+      "kind": "static",
+      "name": "Synthetic crossing export",
+      "parsed": true
+    },
+    {
+      "kind": "static",
+      "name": "Synthetic trajectory inputs",
+      "parsed": true
+    },
+    {
+      "kind": "static",
+      "name": "Counting benchmark report",
+      "parsed": true
+    },
+    {
+      "kind": "static",
+      "name": "Actual-model still replay report",
+      "parsed": true
+    },
+    {
+      "kind": "static",
+      "name": "32-track software profile",
+      "parsed": true
+    },
+    {
+      "kind": "main",
+      "name": "Synthetic traffic session",
+      "parsed": true
+    },
+    {
+      "kind": "main",
+      "name": "Synthetic crossing export",
+      "parsed": true
+    },
+    {
+      "kind": "main",
+      "name": "Synthetic trajectory inputs",
+      "parsed": true
+    },
+    {
+      "kind": "main",
+      "name": "Counting benchmark report",
+      "parsed": true
+    },
+    {
+      "kind": "main",
+      "name": "Actual-model still replay report",
+      "parsed": true
+    },
+    {
+      "kind": "main",
+      "name": "32-track software profile",
+      "parsed": true
+    }
+  ],
+  "errors": [],
+  "static_api_requests": [],
+  "actual_model_replay": {
+    "source": "CC0 still replay, not moving road footage",
+    "state": "paused",
+    "frames": 4,
+    "tracks": 5,
+    "measurements": 0
+  },
+  "passed": true
+}

@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "field_session_id": "00000000-0000-4000-8000-000000000004",
+  "source_id": "video:36f4306a9a8d414f8ce5ae735086ebd6f0c0855426553445a9b346f47f280fce",
+  "geometry": {
+    "width": 640,
+    "height": 480,
+    "rotation": 0,
+    "mirrored": false,
+    "crop": null,
+    "coordinate_space": "source",
+    "intrinsic_profile_id": null
+  },
+  "revision": 0,
+  "provenance": "synthetic",
+  "frames": [
+    {
+      "index": 1,
+      "timestamp_s": 0.0,
+      "reviewed": true,
+      "objects": [
+        {
+          "identity": "manual-vehicle-001",
+          "category": "car",
+          "bbox": [
+            100.0,
+            100.0,
+            180.0,
+            180.0
+          ],
+          "occluded": false,
+          "partial_visibility": false,
+          "entry": true,
+          "exit": false
+        }
+      ],
+      "predictions": [
+        {
+          "predicted_track_id": 1,
+          "category": "car",
+          "bbox": [
+            100.0,
+            100.0,
+            180.0,
+            180.0
+          ],
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "timestamp_s": 0.1,
+      "reviewed": true,
+      "objects": [
+        {
+          "identity": "manual-vehicle-001",
+          "category": "car",
+          "bbox": [
+            110.0,
+            100.0,
+            190.0,
+            180.0
+          ],
+          "occluded": false,
+          "partial_visibility": false,
+          "entry": false,
+          "exit": false
+        }
+      ],
+      "predictions": [
+        {
+          "predicted_track_id": 1,
+          "category": "car",
+          "bbox": [
+            110.0,
+            100.0,
+            190.0,
+            180.0
+          ],
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "timestamp_s": 0.2,
+      "reviewed": true,
+      "objects": [
+        {
+          "identity": "manual-vehicle-001",
+          "category": "car",
+          "bbox": null,
+          "occluded": true,
+          "partial_visibility": false,
+          "entry": false,
+          "exit": false
+        }
+      ],
+      "predictions": []
+    },
+    {
+      "index": 4,
+      "timestamp_s": 0.3,
+      "reviewed": true,
+      "objects": [
+        {
+          "identity": "manual-vehicle-001",
+          "category": "car",
+          "bbox": [
+            130.0,
+            100.0,
+            210.0,
+            180.0
+          ],
+          "occluded": false,
+          "partial_visibility": true,
+          "entry": false,
+          "exit": false
+        }
+      ],
+      "predictions": [
+        {
+          "predicted_track_id": 2,
+          "category": "car",
+          "bbox": [
+            130.0,
+            100.0,
+            210.0,
+            180.0
+          ],
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "timestamp_s": 0.4,
+      "reviewed": true,
+      "objects": [
+        {
+          "identity": "manual-vehicle-001",
+          "category": "car",
+          "bbox": [
+            140.0,
+            100.0,
+            220.0,
+            180.0
+          ],
+          "occluded": false,
+          "partial_visibility": false,
+          "entry": false,
+          "exit": false
+        }
+      ],
+      "predictions": []
+    },
+    {
+      "index": 6,
+      "timestamp_s": 0.5,
+      "reviewed": true,
+      "objects": [
+        {
+          "identity": "manual-vehicle-001",
+          "category": "car",
+          "bbox": [
+            150.0,
+            100.0,
+            230.0,
+            180.0
+          ],
+          "occluded": false,
+          "partial_visibility": false,
+          "entry": false,
+          "exit": true
+        }
+      ],
+      "predictions": [
+        {
+          "predicted_track_id": 2,
+          "category": "car",
+          "bbox": [
+            150.0,
+            100.0,
+            230.0,
+            180.0
+          ],
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "timestamp_s": 0.6,
+      "reviewed": true,
+      "objects": [],
+      "predictions": [
+        {
+          "predicted_track_id": 3,
+          "category": "car",
+          "bbox": [
+            300.0,
+            200.0,
+            370.0,
+            270.0
+          ],
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "timestamp_s": 0.7,
+      "reviewed": false,
+      "objects": [
+        {
+          "identity": "manual-vehicle-002",
+          "category": "car",
+          "bbox": [
+            400.0,
+            200.0,
+            470.0,
+            270.0
+          ],
+          "occluded": false,
+          "partial_visibility": false,
+          "entry": false,
+          "exit": false
+        }
+      ],
+      "predictions": []
+    }
+  ],
+  "proposal_metadata": null
+}

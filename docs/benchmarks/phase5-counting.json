@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-24T21:36:49.456937+00:00",
+  "evidence_type": "synthetic",
+  "description": "Known trajectory inputs enter the real traffic engine. No detection, tracking association, video decoding, HTTP or physical traffic is included.",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.13.9"
+  },
+  "repetitions": 30,
+  "scenario_count": 14,
+  "frame_count": 107,
+  "expectations_met": 14,
+  "expected_crossings": 17,
+  "actual_crossings": 17,
+  "expected_suppressed": 1,
+  "actual_suppressed": 1,
+  "scenarios": [
+    {
+      "scenario": "single_crossing",
+      "frames": 8,
+      "expected_crossings": 1,
+      "actual_crossings": 1,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 1,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 1
+      },
+      "zone_events": 2,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 1
+      },
+      "mean_update_ms": 0.23650000366615131,
+      "p95_update_ms": 0.8806150035525201
+    },
+    {
+      "scenario": "multiple_vehicles",
+      "frames": 8,
+      "expected_crossings": 3,
+      "actual_crossings": 3,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 3,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 3
+      },
+      "zone_events": 6,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 3
+      },
+      "mean_update_ms": 0.1556999995955266,
+      "p95_update_ms": 0.3924049968190956
+    },
+    {
+      "scenario": "bidirectional",
+      "frames": 8,
+      "expected_crossings": 2,
+      "actual_crossings": 2,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 1,
+        "truck": 0,
+        "bus": 1,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 1,
+        "negative": 1
+      },
+      "zone_events": 4,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 2
+      },
+      "mean_update_ms": 0.08045000504353084,
+      "p95_update_ms": 0.1233550028700847
+    },
+    {
+      "scenario": "line_boundary_jitter",
+      "frames": 10,
+      "expected_crossings": 1,
+      "actual_crossings": 1,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 1,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 1
+      },
+      "zone_events": 1,
+      "diagnostics": {
+        "processed_frames": 10,
+        "counted_crossings": 1
+      },
+      "mean_update_ms": 0.08243000047514215,
+      "p95_update_ms": 0.1838199939811602
+    },
+    {
+      "scenario": "short_occlusion",
+      "frames": 8,
+      "expected_crossings": 1,
+      "actual_crossings": 1,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 1,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 1
+      },
+      "zone_events": 2,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 1
+      },
+      "mean_update_ms": 0.04037500184495002,
+      "p95_update_ms": 0.06877000123495236
+    },
+    {
+      "scenario": "identity_fragment_duplicate",
+      "frames": 9,
+      "expected_crossings": 1,
+      "actual_crossings": 1,
+      "expected_suppressed": 1,
+      "actual_suppressed": 1,
+      "expectation_met": true,
+      "classes": {
+        "car": 1,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 1
+      },
+      "zone_events": 2,
+      "diagnostics": {
+        "processed_frames": 9,
+        "counted_crossings": 1,
+        "suppressed_crossings": 1
+      },
+      "mean_update_ms": 0.0544777738266728,
+      "p95_update_ms": 0.07968000136315823
+    },
+    {
+      "scenario": "multiple_lines",
+      "frames": 8,
+      "expected_crossings": 2,
+      "actual_crossings": 2,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 2,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 2
+      },
+      "zone_events": 2,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 2
+      },
+      "mean_update_ms": 0.049949996537179686,
+      "p95_update_ms": 0.0696399925800506
+    },
+    {
+      "scenario": "source_time_gap",
+      "frames": 3,
+      "expected_crossings": 0,
+      "actual_crossings": 0,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 0,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {},
+      "zone_events": 3,
+      "diagnostics": {
+        "processed_frames": 3,
+        "interruptions": 1,
+        "interruption:source_timestamp_gap": 1
+      },
+      "mean_update_ms": 0.07149999631413569,
+      "p95_update_ms": 0.09843999578151852
+    },
+    {
+      "scenario": "missing_timestamp",
+      "frames": 4,
+      "expected_crossings": 0,
+      "actual_crossings": 0,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 0,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {},
+      "zone_events": 3,
+      "diagnostics": {
+        "processed_frames": 3,
+        "interruptions": 1,
+        "interruption:invalid_source_timestamp": 1,
+        "invalid_timestamp_frames": 1
+      },
+      "mean_update_ms": 0.06020000364514999,
+      "p95_update_ms": 0.07625500584254041
+    },
+    {
+      "scenario": "unknown_category",
+      "frames": 8,
+      "expected_crossings": 1,
+      "actual_crossings": 1,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 0,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 1
+      },
+      "directions": {
+        "positive": 1
+      },
+      "zone_events": 2,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 1
+      },
+      "mean_update_ms": 0.05018750198360067,
+      "p95_update_ms": 0.07967500278027727
+    },
+    {
+      "scenario": "noisy_class_evidence",
+      "frames": 8,
+      "expected_crossings": 1,
+      "actual_crossings": 1,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 1,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 1
+      },
+      "zone_events": 2,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 1
+      },
+      "mean_update_ms": 0.04828750024898909,
+      "p95_update_ms": 0.06906000417075119
+    },
+    {
+      "scenario": "simultaneous_close_vehicles",
+      "frames": 8,
+      "expected_crossings": 2,
+      "actual_crossings": 2,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 2,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 2
+      },
+      "zone_events": 4,
+      "diagnostics": {
+        "processed_frames": 8,
+        "counted_crossings": 2
+      },
+      "mean_update_ms": 0.08483749661536422,
+      "p95_update_ms": 0.14501999830827114
+    },
+    {
+      "scenario": "same_track_two_directions",
+      "frames": 9,
+      "expected_crossings": 2,
+      "actual_crossings": 2,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 2,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {
+        "positive": 1,
+        "negative": 1
+      },
+      "zone_events": 1,
+      "diagnostics": {
+        "processed_frames": 9,
+        "counted_crossings": 2
+      },
+      "mean_update_ms": 0.12122221879609343,
+      "p95_update_ms": 0.21539999288506803
+    },
+    {
+      "scenario": "outside_finite_line",
+      "frames": 8,
+      "expected_crossings": 0,
+      "actual_crossings": 0,
+      "expected_suppressed": 0,
+      "actual_suppressed": 0,
+      "expectation_met": true,
+      "classes": {
+        "car": 0,
+        "truck": 0,
+        "bus": 0,
+        "motorcycle": 0,
+        "unknown": 0
+      },
+      "directions": {},
+      "zone_events": 2,
+      "diagnostics": {
+        "processed_frames": 8
+      },
+      "mean_update_ms": 0.07081250078044832,
+      "p95_update_ms": 0.11890999739989637
+    }
+  ],
+  "stages": {
+    "classification_ms": {
+      "n": 3180,
+      "mean_ms": 0.0074175470171836,
+      "p95_ms": 0.01889999839477241,
+      "maximum_ms": 0.1483999949414283
+    },
+    "crossing_ms": {
+      "n": 3180,
+      "mean_ms": 0.003919402583474411,
+      "p95_ms": 0.009700001101009548,
+      "maximum_ms": 0.06599999323952943
+    },
+    "event_creation_ms": {
+      "n": 3180,
+      "mean_ms": 0.007420251650791381,
+      "p95_ms": 0.0494199979584663,
+      "maximum_ms": 0.27299999783281237
+    },
+    "zones_ms": {
+      "n": 3180,
+      "mean_ms": 0.04574034593024865,
+      "p95_ms": 0.11360999269527378,
+      "maximum_ms": 0.6003000016789883
+    },
+    "update_ms": {
+      "n": 3180,
+      "mean_ms": 0.07515977990320069,
+      "p95_ms": 0.17991000131587492,
+      "maximum_ms": 0.622000006842427
+    }
+  }
+}

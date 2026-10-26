@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "table": "speeds",
+  "interval_minutes": 1,
+  "filters": {
+    "session_ids": [],
+    "include_current": false,
+    "interval_minutes": 1,
+    "category": null,
+    "direction": null,
+    "line_id": null,
+    "status": null,
+    "start_s": null,
+    "end_s": null,
+    "speed_status": "valid",
+    "observation_started_after": null,
+    "observation_started_before": null
+  },
+  "selected_session_ids": [
+    "00000000-0000-0000-0000-00000000138d"
+  ],
+  "units": {
+    "timestamp_s": "source seconds",
+    "coverage_seconds": "seconds",
+    "coverage_definition": "valid source-time exposure while at least one selected counting line is active",
+    "source_coverage_seconds": "seconds of all valid observation coverage",
+    "dwell_s": "seconds",
+    "speed": "km/h",
+    "normalized_crossings_per_minute": "crossings/minute of covered source time",
+    "normalized_crossings_per_hour": "crossings/hour of covered source time",
+    "image_position": "configured image pixels"
+  },
+  "summary": {
+    "total_crossings": 6,
+    "counted_events": 6,
+    "retained_counted_events": 6,
+    "count_scope": "lifetime",
+    "incomplete_retained_data": false,
+    "suppressed_events": 0,
+    "coverage_seconds": 59.5,
+    "source_coverage_seconds": 59.5,
+    "unconfigured_source_coverage_seconds": 0.0,
+    "unknown_configuration_coverage_seconds": 0.0,
+    "normalized_crossings_per_minute": 6.050420168067227,
+    "normalized_crossings_per_hour": 363.02521008403363,
+    "most_common_category": "car",
+    "valid_speed_count": 4,
+    "speed_count": 4,
+    "mean_speed_kmh": 28.5,
+    "current_zone_occupancy": 0,
+    "visible_tracks": 0,
+    "peak_interval_count": 6
+  },
+  "warnings": [
+    "Counts are line crossings; summing multiple lines does not count unique physical vehicles.",
+    "Normalized rates describe the covered source-time sample. Short or incomplete windows are not reliable hourly traffic volumes.",
+    "Summed zone occupancy counts memberships; overlapping zones can include the same visible track more than once.",
+    "Image occupancy and stationary thresholds are configurable heuristics, not complete road-network congestion or metric speed."
+  ],
+  "evidence_types": [
+    "synthetic"
+  ],
+  "rows": [
+    {
+      "row_type": "overall",
+      "status": "valid",
+      "n": 4,
+      "mean_kmh": 28.5,
+      "median_kmh": 30.0,
+      "minimum_kmh": 18,
+      "maximum_kmh": 36,
+      "p85_kmh": 34.2,
+      "standard_deviation_kmh": 6.689544080129826
+    },
+    {
+      "row_type": "class",
+      "category": "car",
+      "n": 1,
+      "mean_kmh": 28.0,
+      "median_kmh": 28,
+      "minimum_kmh": 28,
+      "maximum_kmh": 28,
+      "p85_kmh": 28.0,
+      "standard_deviation_kmh": 0.0
+    },
+    {
+      "row_type": "class",
+      "category": "motorcycle",
+      "n": 1,
+      "mean_kmh": 32.0,
+      "median_kmh": 32,
+      "minimum_kmh": 32,
+      "maximum_kmh": 32,
+      "p85_kmh": 32.0,
+      "standard_deviation_kmh": 0.0
+    },
+    {
+      "row_type": "class",
+      "category": "truck",
+      "n": 1,
+      "mean_kmh": 36.0,
+      "median_kmh": 36,
+      "minimum_kmh": 36,
+      "maximum_kmh": 36,
+      "p85_kmh": 36.0,
+      "standard_deviation_kmh": 0.0
+    },
+    {
+      "row_type": "class",
+      "category": "unknown",
+      "n": 1,
+      "mean_kmh": 18.0,
+      "median_kmh": 18,
+      "minimum_kmh": 18,
+      "maximum_kmh": 18,
+      "p85_kmh": 18.0,
+      "standard_deviation_kmh": 0.0
+    },
+    {
+      "row_type": "direction",
+      "direction": "A_to_B",
+      "n": 4,
+      "mean_kmh": 28.5,
+      "median_kmh": 30.0,
+      "minimum_kmh": 18,
+      "maximum_kmh": 36,
+      "p85_kmh": 34.2,
+      "standard_deviation_kmh": 6.689544080129826
+    },
+    {
+      "row_type": "interval",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "start_s": 0,
+      "end_s": 60,
+      "n": 4,
+      "mean_kmh": 28.5,
+      "median_kmh": 30.0,
+      "minimum_kmh": 18,
+      "maximum_kmh": 36,
+      "p85_kmh": 34.2,
+      "standard_deviation_kmh": 6.689544080129826
+    }
+  ]
+}

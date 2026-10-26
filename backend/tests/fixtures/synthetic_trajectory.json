@@ -1,0 +1,37 @@
+{
+  "description": "Synthetic geometry and source times only. This is not a roadway or real-camera accuracy validation.",
+  "calibration": {
+    "name": "Synthetic 20 m validation",
+    "source_id": "synthetic:straight-60",
+    "geometry": { "width": 800, "height": 600 },
+    "points": [
+      { "image": [100, 100], "world": [0, 0] },
+      { "image": [700, 100], "world": [60, 0] },
+      { "image": [700, 550], "world": [60, 45] },
+      { "image": [100, 550], "world": [0, 45] }
+    ],
+    "check_points": [ { "image": [450, 350], "world": [35, 25] } ]
+  },
+  "gates": {
+    "gate_a": [[200, 200], [200, 450]],
+    "gate_b": [[400, 200], [400, 450]],
+    "allow_reverse": false
+  },
+  "samples": [
+    { "timestamp_s": 0.00, "image_position": [150, 300] },
+    { "timestamp_s": 0.24, "image_position": [190, 300] },
+    { "timestamp_s": 0.48, "image_position": [230, 300] },
+    { "timestamp_s": 0.72, "image_position": [270, 300] },
+    { "timestamp_s": 0.96, "image_position": [310, 300] },
+    { "timestamp_s": 1.20, "image_position": [350, 300] },
+    { "timestamp_s": 1.44, "image_position": [390, 300] },
+    { "timestamp_s": 1.68, "image_position": [430, 300] }
+  ],
+  "expected": {
+    "distance_m": 20.0,
+    "elapsed_seconds": 1.2,
+    "estimated_speed_kmh": 60.0,
+    "gate_a_timestamp_s": 0.3,
+    "gate_b_timestamp_s": 1.5
+  }
+}

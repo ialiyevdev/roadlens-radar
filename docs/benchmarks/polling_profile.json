@@ -1,0 +1,38 @@
+{
+  "provenance": "synthetic",
+  "description": "Synthetic retained-state polling profile; never opens hardware or inference.\n\nThe state clones one synthetic result into 1000 records and tiles its raw\nsamples to 120 entries per record. These are storage fixtures, not independent\nobservations or chronological trajectories. Timings exclude state construction.\nThree cached-sync/snapshot/JSON runs\nmeasure only the public polling path. This is not live pipeline throughput.\n",
+  "hardware": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.13.9"
+  },
+  "measurement_records": 1000,
+  "retained_samples_each": 120,
+  "construction_excluded": true,
+  "initial_public_cache_sync_ms": 13.52789999509696,
+  "runs": [
+    {
+      "cached_sync_ms": 1.1838000064017251,
+      "snapshot_copy_ms": 47.42429999168962,
+      "json_serialization_ms": 7.939100003568456,
+      "payload_bytes": 1422024
+    },
+    {
+      "cached_sync_ms": 1.4212000096449628,
+      "snapshot_copy_ms": 43.14749999321066,
+      "json_serialization_ms": 7.86800000059884,
+      "payload_bytes": 1422024
+    },
+    {
+      "cached_sync_ms": 3.5029999999096617,
+      "snapshot_copy_ms": 48.618200002238154,
+      "json_serialization_ms": 4.983600010746159,
+      "payload_bytes": 1422024
+    }
+  ],
+  "median_cached_sync_ms": 1.4212000096449628,
+  "median_snapshot_copy_ms": 47.42429999168962,
+  "median_json_serialization_ms": 7.86800000059884,
+  "payload_MiB": 1.3561477661132812,
+  "limitations": "Synthetic retained-state polling only; not physical camera, inference, full evidence export, or FPS profiling. Host load can affect timings."
+}

@@ -1,0 +1,127 @@
+{
+  "measured_at": "2026-10-24T10:57:38.313133+00:00",
+  "evidence": "synthetic software workload; no physical camera, roadway or independent reference device tested",
+  "hardware": {
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "software": {
+    "python": "3.13.9",
+    "opencv": "4.14.0",
+    "pyav": "16.1.0"
+  },
+  "method": {
+    "iterations": 30,
+    "warmup": "One untimed call for stateless operations; new decoders for navigation trials",
+    "clock": "perf_counter",
+    "percentile": "P95 linear interpolation at (n-1)*0.95",
+    "video": "120 generated FFV1 frames, 320x240, 25 fps, labeled synthetic",
+    "field": "6 original events, 4 eligible comparisons, 4 baseline/improved pairs, 7 references",
+    "limitations": "Tiny cached local workload, variable scheduling/I/O; excludes ML inference, live capture, HTTP and browser rendering. Not a throughput or real-camera guarantee."
+  },
+  "reference_import_7_events": {
+    "n": 30,
+    "mean_ms": 0.11731666600098833,
+    "median_ms": 0.07564999759779312,
+    "p95_ms": 0.24536499768146314,
+    "maximum_ms": 0.2775999964796938
+  },
+  "explicit_matching_one_event": {
+    "n": 30,
+    "mean_ms": 0.019673333493604634,
+    "median_ms": 0.017499998648418114,
+    "p95_ms": 0.027210000189370476,
+    "maximum_ms": 0.04650000482797623
+  },
+  "evaluation_complete_fixture": {
+    "n": 30,
+    "mean_ms": 1.4835266670464382,
+    "median_ms": 1.3992500025779009,
+    "p95_ms": 1.6954499977146043,
+    "maximum_ms": 2.2540999998454936
+  },
+  "report_json": {
+    "n": 30,
+    "mean_ms": 0.312866666354239,
+    "median_ms": 0.3004499994858634,
+    "p95_ms": 0.3590500018617603,
+    "maximum_ms": 0.5180000007385388
+  },
+  "report_csv": {
+    "n": 30,
+    "mean_ms": 0.7210566664677268,
+    "median_ms": 0.6858499982627109,
+    "p95_ms": 0.8701050010131439,
+    "maximum_ms": 0.9086999998544343
+  },
+  "report_html": {
+    "n": 30,
+    "mean_ms": 0.33748999897701043,
+    "median_ms": 0.3211999974155333,
+    "p95_ms": 0.42485499870963384,
+    "maximum_ms": 0.48489999608136714
+  },
+  "timestamp_diagnostics": {
+    "source_batch_1000_frames": {
+      "n": 30,
+      "mean_ms": 4.22516999921451,
+      "median_ms": 4.2771999978867825,
+      "p95_ms": 4.615395000655552,
+      "maximum_ms": 4.981499994755723
+    },
+    "processed_batch_1000_frames": {
+      "n": 30,
+      "mean_ms": 0.5144966669225445,
+      "median_ms": 0.5058999995526392,
+      "p95_ms": 0.5233950025285594,
+      "maximum_ms": 0.7320000004256144
+    },
+    "mean_source_per_frame_ms": 0.004225169999214511,
+    "mean_processed_per_frame_ms": 0.0005144966669225445,
+    "snapshot_rolling_240_latencies": {
+      "n": 30,
+      "mean_ms": 0.006893332950615634,
+      "median_ms": 0.006599999323952943,
+      "p95_ms": 0.008024998169275929,
+      "maximum_ms": 0.01219999830937013
+    }
+  },
+  "annotation_navigation": {
+    "uncached_forward_to_frame_120": {
+      "n": 30,
+      "mean_ms": 64.07943666684635,
+      "median_ms": 42.412499999045394,
+      "p95_ms": 147.75560000271068,
+      "maximum_ms": 173.30289999517845
+    },
+    "sequential_next_frame": {
+      "n": 30,
+      "mean_ms": 1.5132366674758184,
+      "median_ms": 1.4456999997491948,
+      "p95_ms": 2.3266700012754855,
+      "maximum_ms": 3.0297000048449263
+    },
+    "cached_previous_frame": {
+      "n": 30,
+      "mean_ms": 0.14684333315623613,
+      "median_ms": 0.13984999895910732,
+      "p95_ms": 0.19450999934633728,
+      "maximum_ms": 0.23330000112764537
+    },
+    "uncached_previous_to_frame_1": {
+      "n": 30,
+      "mean_ms": 7.111186667073828,
+      "median_ms": 7.002700000157347,
+      "p95_ms": 8.672299999670937,
+      "maximum_ms": 9.662799995567184
+    },
+    "metadata_index_120_frames": {
+      "n": 30,
+      "mean_ms": 143.88708666689732,
+      "median_ms": 145.76930000112043,
+      "p95_ms": 158.40133000347123,
+      "maximum_ms": 160.2262000014889
+    }
+  }
+}

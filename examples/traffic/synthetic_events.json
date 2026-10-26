@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "table": "events",
+  "interval_minutes": 1,
+  "filters": {
+    "session_ids": [],
+    "include_current": false,
+    "interval_minutes": 1,
+    "category": null,
+    "direction": null,
+    "line_id": null,
+    "status": null,
+    "start_s": null,
+    "end_s": null,
+    "speed_status": "valid",
+    "observation_started_after": null,
+    "observation_started_before": null
+  },
+  "selected_session_ids": [
+    "00000000-0000-0000-0000-00000000138d"
+  ],
+  "units": {
+    "timestamp_s": "source seconds",
+    "coverage_seconds": "seconds",
+    "coverage_definition": "valid source-time exposure while at least one selected counting line is active",
+    "source_coverage_seconds": "seconds of all valid observation coverage",
+    "dwell_s": "seconds",
+    "speed": "km/h",
+    "normalized_crossings_per_minute": "crossings/minute of covered source time",
+    "normalized_crossings_per_hour": "crossings/hour of covered source time",
+    "image_position": "configured image pixels"
+  },
+  "summary": {
+    "total_crossings": 6,
+    "counted_events": 6,
+    "retained_counted_events": 6,
+    "count_scope": "lifetime",
+    "incomplete_retained_data": false,
+    "suppressed_events": 0,
+    "coverage_seconds": 59.5,
+    "source_coverage_seconds": 59.5,
+    "unconfigured_source_coverage_seconds": 0.0,
+    "unknown_configuration_coverage_seconds": 0.0,
+    "normalized_crossings_per_minute": 6.050420168067227,
+    "normalized_crossings_per_hour": 363.02521008403363,
+    "most_common_category": "car",
+    "valid_speed_count": 4,
+    "speed_count": 4,
+    "mean_speed_kmh": 28.5,
+    "current_zone_occupancy": 0,
+    "visible_tracks": 0,
+    "peak_interval_count": 6
+  },
+  "warnings": [
+    "Counts are line crossings; summing multiple lines does not count unique physical vehicles.",
+    "Normalized rates describe the covered source-time sample. Short or incomplete windows are not reliable hourly traffic volumes.",
+    "Summed zone occupancy counts memberships; overlapping zones can include the same visible track more than once.",
+    "Image occupancy and stationary thresholds are configurable heuristics, not complete road-network congestion or metric speed."
+  ],
+  "evidence_types": [
+    "synthetic"
+  ],
+  "rows": [
+    {
+      "id": "fff369a8-073c-44f6-ae1c-0b30493ef2d0",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 1,
+      "timestamp_s": 3.571428571428571,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "car",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "car",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "car": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        45.0,
+        60.0
+      ],
+      "measured_speed_kmh": 28,
+      "speed_measurement_id": "synthetic-speed-1"
+    },
+    {
+      "id": "c6985c91-e3fc-4717-9aac-15cf1ba0338b",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 2,
+      "timestamp_s": 13.571428571428571,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "truck",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "truck",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "truck": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        65.0,
+        60.0
+      ],
+      "measured_speed_kmh": 36,
+      "speed_measurement_id": "synthetic-speed-2"
+    },
+    {
+      "id": "7d09105d-b1f7-444b-9d80-751863d52740",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 3,
+      "timestamp_s": 23.571428571428573,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "bus",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "bus",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "bus": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        85.0,
+        60.0
+      ],
+      "measured_speed_kmh": null
+    },
+    {
+      "id": "e29c942b-be81-4113-b1d6-389e9536237e",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 4,
+      "timestamp_s": 33.57142857142857,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "motorcycle",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "motorcycle",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "motorcycle": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        105.0,
+        60.0
+      ],
+      "measured_speed_kmh": 32,
+      "speed_measurement_id": "synthetic-speed-4"
+    },
+    {
+      "id": "b7ffb010-c695-4811-8f6c-418c5592004e",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 5,
+      "timestamp_s": 43.57142857142857,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "car",
+      "class_score": 0.9000000000000001,
+      "class_observations": 9,
+      "raw_category": "car",
+      "raw_confidence": 0.9,
+      "class_evidence": {
+        "car": 8.100000000000001
+      },
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        125.0,
+        60.0
+      ],
+      "measured_speed_kmh": null
+    },
+    {
+      "id": "9bdb137c-d9c7-4ebc-8db6-d40bd4e14ea4",
+      "session_id": "00000000-0000-0000-0000-00000000138d",
+      "source_id": "synthetic:phase5-trajectories",
+      "track_id": 6,
+      "timestamp_s": 53.57142857142857,
+      "line_id": "main",
+      "line_label": "Synthetic main line",
+      "direction": "positive",
+      "direction_label": "Down image",
+      "category": "unknown",
+      "class_score": 0.0,
+      "class_observations": 9,
+      "raw_category": "unsupported",
+      "raw_confidence": 0.9,
+      "class_evidence": {},
+      "status": "counted",
+      "diagnostic_reasons": [
+        "finite_segment_crossing",
+        "stable_sides_outside_hysteresis",
+        "temporary_track_identity_unverified",
+        "crossing_interpolated_across_short_observation_gap",
+        "class_evidence_insufficient_or_uncertain"
+      ],
+      "configuration_id": "synthetic-main",
+      "provenance": "synthetic",
+      "image_position": [
+        145.0,
+        60.0
+      ],
+      "measured_speed_kmh": 18,
+      "speed_measurement_id": "synthetic-speed-6"
+    }
+  ]
+}

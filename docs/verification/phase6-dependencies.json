@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-10-24T22:22:02.121182+00:00",
+  "scope": "Pinned runtime/dev and build locks; local verification, no publication",
+  "python_advisory_audit": {
+    "tool": "pip-audit 2.9.0",
+    "service": "PyPI",
+    "requirements": [
+      "requirements-dev.lock",
+      "requirements-build.lock"
+    ],
+    "packages": 28,
+    "known_vulnerabilities": 0,
+    "build_helper": "84.1.0"
+  },
+  "pip_check": "No broken requirements found",
+  "npm_audit": {
+    "dependencies": 138,
+    "vulnerabilities": 0
+  },
+  "limits": "Version pins do not include wheel hashes; advisory data can change and does not cover undisclosed issues."
+}

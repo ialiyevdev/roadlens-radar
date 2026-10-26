@@ -1,0 +1,13 @@
+.measurement-export-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-left: auto; }
+.measurement-export-actions a { text-decoration: none; }
+.measurement-evidence { margin-top: 8px; max-width: 440px; white-space: normal; }
+.measurement-evidence summary { cursor: pointer; color: var(--text-secondary, #a4b0bd); }
+.measurement-evidence dl { margin: 8px 0; font-size: 11px; }
+.measurement-evidence dl div { display: flex; justify-content: space-between; gap: 16px; padding: 4px 0; border-bottom: 1px solid #26313e; }
+.measurement-evidence dd { margin: 0; text-align: right; }
+.measurement-evidence p { font-size: 11px; line-height: 1.6; color: #96a3b3; }
+.diagnostics-panel h3 { font-size: 12px; margin: 20px 0 8px; font-weight: 600; }
+@media (max-width: 600px) {
+  .measurement-panel > .panel-heading { flex-wrap: wrap; gap: 12px; }
+  .measurement-export-actions { margin-left: 0; }
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-24T21:36:55.351570+00:00",
+  "evidence_type": "actual_model_still_replay_with_synthetic_regions",
+  "workload": "Actual YOLOX-S INT8 on a repeated CC0 image. Two manually configured counting lines and one image zone exercise the new code; vehicles do not move.",
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "logical_cpus": 12,
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9",
+    "opencv": "4.14.0",
+    "opencv_threads": 12
+  },
+  "frames": 12,
+  "warm_up_frames": 1,
+  "input_size": 640,
+  "image_geometry": [
+    640,
+    360
+  ],
+  "fixture_sha256": "9e18f000d1ab28d7415f719e48bdba0753188a42841be5a5f606d529a9fcfdc2",
+  "model_sha256": "dcaae0aaa2fea4167f89235ee340eb869d3707b25712218d4c7ce921ac90e2ba",
+  "detection_counts": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "track_counts": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "counting_lines": 2,
+  "image_zones": 1,
+  "crossings": 0,
+  "timings": {
+    "detection_ms": {
+      "n": 12,
+      "mean_ms": 176.3775749980899,
+      "median_ms": 175.67440000129864,
+      "p95_ms": 181.1587000003783,
+      "maximum_ms": 183.4973000077298
+    },
+    "tracking_ms": {
+      "n": 12,
+      "mean_ms": 0.16239999968092889,
+      "median_ms": 0.15929999790387228,
+      "p95_ms": 0.21385999643825926,
+      "maximum_ms": 0.22089999401941895
+    },
+    "traffic_ms": {
+      "n": 12,
+      "mean_ms": 0.2123750006527795,
+      "median_ms": 0.17484999989392236,
+      "p95_ms": 0.37625499971909426,
+      "maximum_ms": 0.5478000093717128
+    },
+    "classification_ms": {
+      "n": 12,
+      "mean_ms": 0.02926666760079873,
+      "median_ms": 0.02559999848017469,
+      "p95_ms": 0.044604998402064666,
+      "maximum_ms": 0.04509999416768551
+    },
+    "crossing_ms": {
+      "n": 12,
+      "mean_ms": 0.01602500196895562,
+      "median_ms": 0.012500000593718141,
+      "p95_ms": 0.03181499923812225,
+      "maximum_ms": 0.037699996028095484
+    },
+    "event_creation_ms": {
+      "n": 12,
+      "mean_ms": 0.0009666631134071698,
+      "median_ms": 0.0008999995770864189,
+      "p95_ms": 0.0013449956895783544,
+      "maximum_ms": 0.0013999961083754897
+    },
+    "zones_ms": {
+      "n": 12,
+      "mean_ms": 0.13473333456204273,
+      "median_ms": 0.10580000525806099,
+      "p95_ms": 0.2533450031478422,
+      "maximum_ms": 0.382099999114871
+    },
+    "statistics_ms": {
+      "n": 12,
+      "mean_ms": 0.5074666660220828,
+      "median_ms": 0.4358000078354962,
+      "p95_ms": 0.8208649967855305,
+      "maximum_ms": 1.0890999983530492
+    },
+    "serialization_ms": {
+      "n": 12,
+      "mean_ms": 0.12233333351711433,
+      "median_ms": 0.11339999764459208,
+      "p95_ms": 0.16931999634834935,
+      "maximum_ms": 0.18339999951422215
+    },
+    "total_ms": {
+      "n": 12,
+      "mean_ms": 177.38214999796278,
+      "median_ms": 176.82674999377923,
+      "p95_ms": 182.01715500108548,
+      "maximum_ms": 184.36230000224896
+    }
+  },
+  "limitations": [
+    "In-memory still replay excludes decode, lens correction, road projection, speed estimation, overlays, JPEG, HTTP and browser rendering.",
+    "Model loading and one warm-up inference are excluded. Source time advances by 0.1 seconds independently of perf_counter timings.",
+    "A still image provides no moving-vehicle counting accuracy or physical speed evidence. Synthetic regions establish no real camera geometry.",
+    "Additional traffic cost is measured separately; these timings do not establish a statistically significant throughput change."
+  ]
+}

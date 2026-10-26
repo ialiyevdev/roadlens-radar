@@ -1,0 +1,71 @@
+[
+  {
+    "id": "reference-001",
+    "timestamp_s": 110.5,
+    "speed": 30,
+    "units": "km/h",
+    "method": "Synthetic independent arithmetic fixture; no field instrument",
+    "provenance": "synthetic",
+    "independent": true,
+    "quality_notes": "Generated numbers exercise workflow only, not roadway accuracy."
+  },
+  {
+    "id": "reference-002",
+    "timestamp_s": 120.5,
+    "speed": 40,
+    "units": "km/h",
+    "method": "Synthetic independent arithmetic fixture; no field instrument",
+    "provenance": "synthetic",
+    "independent": true,
+    "quality_notes": "Generated numbers exercise workflow only, not roadway accuracy."
+  },
+  {
+    "id": "reference-003",
+    "timestamp_s": 130.5,
+    "speed": 50,
+    "units": "km/h",
+    "method": "Synthetic independent arithmetic fixture; no field instrument",
+    "provenance": "synthetic",
+    "independent": true,
+    "quality_notes": "Generated numbers exercise workflow only, not roadway accuracy."
+  },
+  {
+    "id": "reference-004",
+    "timestamp_s": 140.5,
+    "speed": 60,
+    "units": "km/h",
+    "method": "Synthetic independent arithmetic fixture; no field instrument",
+    "provenance": "synthetic",
+    "independent": true,
+    "quality_notes": "Generated numbers exercise workflow only, not roadway accuracy."
+  },
+  {
+    "id": "reference-005",
+    "timestamp_s": 150.5,
+    "speed": 70,
+    "units": "km/h",
+    "method": "Synthetic independent arithmetic fixture; no field instrument",
+    "provenance": "synthetic",
+    "independent": true,
+    "quality_notes": "Generated numbers exercise workflow only, not roadway accuracy."
+  },
+  {
+    "id": "reference-006",
+    "timestamp_s": 160.5,
+    "speed": 80,
+    "units": "km/h",
+    "method": "Synthetic independent arithmetic fixture; no field instrument",
+    "provenance": "synthetic",
+    "independent": true,
+    "quality_notes": "Generated numbers exercise workflow only, not roadway accuracy."
+  },
+  {
+    "id": "reference-unmatched",
+    "timestamp_s": 175,
+    "speed": 45,
+    "units": "km/h",
+    "method": "Synthetic independent arithmetic fixture",
+    "provenance": "synthetic",
+    "independent": true
+  }
+]

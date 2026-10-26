@@ -1,0 +1,269 @@
+{
+  "verified_on": "2026-10-26",
+  "scope": "Local Chromium, final GitHub Pages project build under /roadlens-radar/; Python API and full-app dev server stopped",
+  "browser": "Chrome/156.0.8078.4",
+  "layouts": [
+    {
+      "step": 1,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Vehicle detection"
+    },
+    {
+      "step": 2,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Multi-object tracking"
+    },
+    {
+      "step": 3,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Perspective calibration"
+    },
+    {
+      "step": 4,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Virtual speed gates"
+    },
+    {
+      "step": 5,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "step": 6,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "step": 7,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Vehicle classification"
+    },
+    {
+      "step": 8,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Monitoring zones"
+    },
+    {
+      "step": 9,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Traffic analytics"
+    },
+    {
+      "step": 10,
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "step": 1,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Vehicle detection"
+    },
+    {
+      "step": 2,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Multi-object tracking"
+    },
+    {
+      "step": 3,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Perspective calibration"
+    },
+    {
+      "step": 4,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Virtual speed gates"
+    },
+    {
+      "step": 5,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "step": 6,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "step": 7,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Vehicle classification"
+    },
+    {
+      "step": 8,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Monitoring zones"
+    },
+    {
+      "step": 9,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Traffic analytics"
+    },
+    {
+      "step": 10,
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Validation & benchmarking"
+    },
+    {
+      "step": 1,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Vehicle detection"
+    },
+    {
+      "step": 2,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Multi-object tracking"
+    },
+    {
+      "step": 3,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Perspective calibration"
+    },
+    {
+      "step": 4,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Virtual speed gates"
+    },
+    {
+      "step": 5,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Speed & diagnostics"
+    },
+    {
+      "step": 6,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Directional vehicle counting"
+    },
+    {
+      "step": 7,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Vehicle classification"
+    },
+    {
+      "step": 8,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Monitoring zones"
+    },
+    {
+      "step": 9,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Traffic analytics"
+    },
+    {
+      "step": 10,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "title": "Validation & benchmarking"
+    }
+  ],
+  "keyboard": [
+    {
+      "key": "Home",
+      "active": "01 Vehicle detection"
+    },
+    {
+      "key": "ArrowRight",
+      "active": "02 Multi-object tracking"
+    },
+    {
+      "key": "End",
+      "active": "10 Validation & benchmarking"
+    },
+    {
+      "key": "ArrowLeft",
+      "active": "09 Traffic analytics"
+    }
+  ],
+  "downloads": [
+    {
+      "label": "Synthetic traffic session",
+      "parsed": true
+    },
+    {
+      "label": "Synthetic crossing export",
+      "parsed": true
+    },
+    {
+      "label": "Synthetic trajectory inputs",
+      "parsed": true
+    },
+    {
+      "label": "Counting benchmark report",
+      "parsed": true
+    },
+    {
+      "label": "Actual-model still replay report",
+      "parsed": true
+    },
+    {
+      "label": "32-track software profile",
+      "parsed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "filename": "phase6-showcase.png",
+      "width": 1440,
+      "height": 1541,
+      "sha256Verified": true
+    },
+    {
+      "filename": "phase6-showcase-mobile.png",
+      "width": 390,
+      "height": 2090,
+      "sha256Verified": true
+    },
+    {
+      "filename": "phase6-dashboard.png",
+      "width": 1440,
+      "height": 2397,
+      "sha256Verified": true
+    }
+  ],
+  "notices": [
+    "README.md",
+    "LICENSE",
+    "third_party/NOTICE.md",
+    "third_party/opencv_yolox_LICENSE.txt",
+    "backend/tests/fixtures/README.md",
+    "examples/demo/manifest.json",
+    "npm/react-LICENSE.txt",
+    "npm/react-dom-LICENSE.txt",
+    "npm/scheduler-LICENSE.txt"
+  ],
+  "apiRequests": [],
+  "externalRequests": [],
+  "pageErrors": [],
+  "failedResponses": [],
+  "chartTogglePassed": true,
+  "refreshAndHashEntryPassed": true,
+  "passed": true
+}

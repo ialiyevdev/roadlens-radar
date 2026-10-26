@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-24T21:36:51.527318+00:00",
+  "evidence_type": "synthetic",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "python": "3.13.9"
+  },
+  "workload": {
+    "repetitions": 30,
+    "small_artifact_events": 6,
+    "small_artifact_frames": 120,
+    "dense_frames": 200,
+    "dense_tracks_per_frame": 32,
+    "counting_lines": 1,
+    "image_zones": 1
+  },
+  "dense_tracking_per_frame": {
+    "n": 200,
+    "mean_ms": 3.2350400012364844,
+    "median_ms": 3.0161500035319477,
+    "p95_ms": 4.210615005285944,
+    "maximum_ms": 9.92959999712184
+  },
+  "dense_traffic_per_frame": {
+    "n": 200,
+    "mean_ms": 0.8380755003599916,
+    "median_ms": 0.7687000033911318,
+    "p95_ms": 1.2479500102926975,
+    "maximum_ms": 2.7039999986300245
+  },
+  "dense_traffic_stages": {
+    "classification_ms": {
+      "n": 200,
+      "mean_ms": 0.08294000021123793,
+      "median_ms": 0.07370000093942508,
+      "p95_ms": 0.13300000864546746,
+      "maximum_ms": 0.38240000139921904
+    },
+    "crossing_ms": {
+      "n": 200,
+      "mean_ms": 0.03431900040595792,
+      "median_ms": 0.031049996323417872,
+      "p95_ms": 0.05420500528998673,
+      "maximum_ms": 0.11590000940486789
+    },
+    "event_creation_ms": {
+      "n": 200,
+      "mean_ms": 0.000838499327073805,
+      "median_ms": 0.0007999915396794677,
+      "p95_ms": 0.0016999983927235007,
+      "maximum_ms": 0.002900007530115545
+    },
+    "zones_ms": {
+      "n": 200,
+      "mean_ms": 0.6507415000669425,
+      "median_ms": 0.5957000030321069,
+      "p95_ms": 0.9983650037611368,
+      "maximum_ms": 1.9890999974450096
+    },
+    "update_ms": {
+      "n": 200,
+      "mean_ms": 0.8341620003193384,
+      "median_ms": 0.7650499974261038,
+      "p95_ms": 1.243065001472132,
+      "maximum_ms": 2.691500005312264
+    }
+  },
+  "small_statistics_aggregation": {
+    "n": 30,
+    "mean_ms": 0.44716000120388344,
+    "median_ms": 0.3663499956019223,
+    "p95_ms": 0.7815549914084838,
+    "maximum_ms": 1.2717000063275918
+  },
+  "dense_statistics_aggregation": {
+    "n": 30,
+    "mean_ms": 0.11566333220495532,
+    "median_ms": 0.10165000276174396,
+    "p95_ms": 0.17715500362101,
+    "maximum_ms": 0.21489999198820442
+  },
+  "dashboard_snapshot_serialization": {
+    "n": 30,
+    "mean_ms": 0.1898733331472613,
+    "median_ms": 0.18960000306833535,
+    "p95_ms": 0.19744999517570247,
+    "maximum_ms": 0.20179999410174787
+  },
+  "dashboard_analytics_serialization": {
+    "n": 30,
+    "mean_ms": 0.17570999916642904,
+    "median_ms": 0.17189999925903976,
+    "p95_ms": 0.2011499993386678,
+    "maximum_ms": 0.21659999038092792
+  },
+  "exports": {
+    "events_json": {
+      "n": 30,
+      "mean_ms": 0.051499999729761235,
+      "median_ms": 0.050050002755597234,
+      "p95_ms": 0.06008000345900653,
+      "maximum_ms": 0.06390000635292381
+    },
+    "events_csv": {
+      "n": 30,
+      "mean_ms": 0.27546666727478925,
+      "median_ms": 0.2600500010885298,
+      "p95_ms": 0.3462550026597455,
+      "maximum_ms": 0.3501999890431762
+    },
+    "flow_json": {
+      "n": 30,
+      "mean_ms": 0.03997333308992287,
+      "median_ms": 0.04884999361820519,
+      "p95_ms": 0.050009995902655646,
+      "maximum_ms": 0.05079999391455203
+    },
+    "flow_csv": {
+      "n": 30,
+      "mean_ms": 0.14190333167789504,
+      "median_ms": 0.14284999633673579,
+      "p95_ms": 0.15931999078020453,
+      "maximum_ms": 0.2204000047640875
+    },
+    "speeds_json": {
+      "n": 30,
+      "mean_ms": 0.03684999974211678,
+      "median_ms": 0.033700001949910074,
+      "p95_ms": 0.05214500415604561,
+      "maximum_ms": 0.0678999931551516
+    },
+    "speeds_csv": {
+      "n": 30,
+      "mean_ms": 0.19485666756130135,
+      "median_ms": 0.18585000361781567,
+      "p95_ms": 0.23070000097504817,
+      "maximum_ms": 0.298700004350394
+    },
+    "zones_json": {
+      "n": 30,
+      "mean_ms": 0.01765333387690286,
+      "median_ms": 0.017300000763498247,
+      "p95_ms": 0.019365001935511827,
+      "maximum_ms": 0.02200000744778663
+    },
+    "zones_csv": {
+      "n": 30,
+      "mean_ms": 0.04797666673160469,
+      "median_ms": 0.04735000402433798,
+      "p95_ms": 0.05097000175737775,
+      "maximum_ms": 0.05669999518431723
+    }
+  },
+  "limitations": [
+    "Inference, video decode, network/HTTP and browser rendering are excluded; these are additional CPU software costs.",
+    "Tracker and traffic timings use deterministic 32-box inputs and one image zone, not measured roadway throughput.",
+    "Detection is unchanged; use the existing real-model pipeline profile for separate end-to-end inference evidence."
+  ]
+}

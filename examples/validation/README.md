@@ -1,0 +1,21 @@
+# Independent-reference import examples
+
+Both files contain the same **synthetic** arithmetic example, not physical camera or reference-instrument observations. Reference speeds are prescribed constants; estimates are deliberately perturbed values. They test software matching and statistics and cannot establish road-speed accuracy.
+
+Import `synthetic_reference_speeds.json` or `.csv` in **Validation & Benchmarks**, then evaluate. The evaluator is separate from inference and does not alter estimates. Reproduce it with:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\validate_dataset.py examples\validation\synthetic_reference_speeds.json --output data\validation-report.json --csv-output data\validation-events.csv
+```
+
+JSON requires `name`, `provenance` (`synthetic` or `real_world`), `description`, and `records`. Each record identifies one vehicle crossing event using `recording_id`, `observation_id`, and `measurement_id`. Their `reference_...` counterparts must all match for numeric comparison. These IDs express the dataset author's association, which software cannot authenticate. Do not use a frame timestamp shared by multiple vehicles as the sole event identifier.
+
+CSV repeats `dataset_name`, `dataset_provenance`, and `dataset_description` identically on every row. Other columns mirror record fields. Empty optional cells mean missing values, not zero. `reference_independent` accepts `true` or `false`; `diagnostics` is a JSON object cell. Imports accept UTF-8 (with or without BOM), at most 2 MiB and 10,000 records, and reject duplicate event or measurement identifiers within a recording. Files remain in memory during evaluation and are not retained by the server.
+
+Set `reference_independent: true` only when the reference method is independent of RoadLens; describe the actual method and uncertainty in `reference_method` and diagnostics. Names containing RoadLens/self-reference are excluded even if independence is declared. A declaration is not proof that a reference instrument is accurate. `association` is `matched`, `ambiguous`, `unmatched`, or `mismatched`; only `matched` is eligible. Timestamps and reference intervals are preserved as author-supplied diagnostics: matching IDs do not establish synchronization or prove that two timed events coincide. Check synchronization independently before declaring a match. Rejected measurements, absent estimates/references, ambiguous associations, identifier mismatches, and non-independent references appear with exclusion reasons. Numeric speeds must be finite and nonnegative. Include rejected and incomplete attempts if completion/rejection rates should describe all recorded attempts.
+
+With the bundled example, there are 18 attempts, 14 unambiguously reference-matched events, and 12 numeric comparisons. Of 18 records, one is rejected and 16 have completed non-rejected estimates. MAE is 2.833333 km/h, RMSE 3.265986 km/h, signed bias +1.333333 km/h, median absolute error 2.5 km/h, and P90 absolute error 4.9 km/h. P90 uses linear interpolation. Zero reference speed is omitted from percentage errors, leaving 11 percentage comparisons. Eight of 12 errors are within ±3 km/h and 11 of 12 within ±5 km/h. Tolerances are analysis settings, not accuracy guarantees.
+
+The report includes every original record and exclusion reason. Aggregate errors require at least three eligible comparisons by default. This prevents single-event accuracy summaries but does not imply statistical confidence. Groups for valid and approximate status always show their sample counts; speed and direction groups appear only when sufficient. Rejection and completion percentages use **all imported rows**, so an incomplete dataset cannot represent unrecorded attempts.
+
+JSON exports preserve all input text exactly. CSV exports prefix potentially executable text cells with an apostrophe for spreadsheet safety; export CSV is a results table, while the original example CSV is the import template. Results CSV repeats dataset totals and `summary_json`, `options_json`, `groups_json`, and `limitations_json` on each `row_type=measurement` row; an empty report instead has one `row_type=summary` row with no measurement. Use the JSON report's `rows[].record` values to recover exact original text.

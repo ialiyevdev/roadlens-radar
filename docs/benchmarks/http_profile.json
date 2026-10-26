@@ -1,0 +1,17 @@
+{
+  "workload": "Local HTTP GET /api/session; 3 warm-up requests, sequential new client connections.",
+  "source_state": "idle",
+  "requests": 20,
+  "payload_bytes": 900,
+  "server_setup_ms": {
+    "mean": 1.0212999999999999,
+    "median": 0.8254999999999999,
+    "p95": 2.0196500000000004
+  },
+  "client_roundtrip_ms": {
+    "mean": 4.83371999944211,
+    "median": 2.5218500013579614,
+    "p95": 14.478335002786487
+  },
+  "limits": "One local run on the documented host. Server header timing ends at response setup, before body transfer. Client timing includes loopback connection/read overhead. Idle results do not characterize a running or full-history session."
+}

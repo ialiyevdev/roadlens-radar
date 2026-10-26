@@ -1,0 +1,1866 @@
+{
+  "provenance": "synthetic",
+  "source_id": "synthetic:phase5-trajectories",
+  "frames": [
+    {
+      "index": 1,
+      "timestamp_s": 0.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            -2.0,
+            53,
+            10.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "timestamp_s": 0.5,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            5.0,
+            53,
+            17.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "timestamp_s": 1.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            12.0,
+            53,
+            24.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "timestamp_s": 1.5,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            19.0,
+            53,
+            31.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "timestamp_s": 2.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            26.0,
+            53,
+            38.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "timestamp_s": 2.5,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            33.0,
+            53,
+            45.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "timestamp_s": 3.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            40.0,
+            53,
+            52.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "timestamp_s": 3.5,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            47.0,
+            53,
+            59.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "timestamp_s": 4.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            54.0,
+            53,
+            66.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "timestamp_s": 4.5,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            61.0,
+            53,
+            73.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "timestamp_s": 5.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            68.0,
+            53,
+            80.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "timestamp_s": 5.5,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            75.0,
+            53,
+            87.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "timestamp_s": 6.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            82.0,
+            53,
+            94.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "timestamp_s": 6.5,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            89.0,
+            53,
+            101.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "timestamp_s": 7.0,
+      "tracks": [
+        {
+          "id": 1,
+          "bbox": [
+            37,
+            96.0,
+            53,
+            108.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "timestamp_s": 7.5,
+      "tracks": []
+    },
+    {
+      "index": 17,
+      "timestamp_s": 8.0,
+      "tracks": []
+    },
+    {
+      "index": 18,
+      "timestamp_s": 8.5,
+      "tracks": []
+    },
+    {
+      "index": 19,
+      "timestamp_s": 9.0,
+      "tracks": []
+    },
+    {
+      "index": 20,
+      "timestamp_s": 9.5,
+      "tracks": []
+    },
+    {
+      "index": 21,
+      "timestamp_s": 10.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            -2.0,
+            73,
+            10.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "timestamp_s": 10.5,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            5.0,
+            73,
+            17.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "timestamp_s": 11.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            12.0,
+            73,
+            24.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "timestamp_s": 11.5,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            19.0,
+            73,
+            31.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "timestamp_s": 12.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            26.0,
+            73,
+            38.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "timestamp_s": 12.5,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            33.0,
+            73,
+            45.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "timestamp_s": 13.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            40.0,
+            73,
+            52.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "timestamp_s": 13.5,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            47.0,
+            73,
+            59.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "timestamp_s": 14.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            54.0,
+            73,
+            66.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "timestamp_s": 14.5,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            61.0,
+            73,
+            73.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "timestamp_s": 15.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            68.0,
+            73,
+            80.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "timestamp_s": 15.5,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            75.0,
+            73,
+            87.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "timestamp_s": 16.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            82.0,
+            73,
+            94.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "timestamp_s": 16.5,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            89.0,
+            73,
+            101.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "timestamp_s": 17.0,
+      "tracks": [
+        {
+          "id": 2,
+          "bbox": [
+            57,
+            96.0,
+            73,
+            108.0
+          ],
+          "category": "truck",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "timestamp_s": 17.5,
+      "tracks": []
+    },
+    {
+      "index": 37,
+      "timestamp_s": 18.0,
+      "tracks": []
+    },
+    {
+      "index": 38,
+      "timestamp_s": 18.5,
+      "tracks": []
+    },
+    {
+      "index": 39,
+      "timestamp_s": 19.0,
+      "tracks": []
+    },
+    {
+      "index": 40,
+      "timestamp_s": 19.5,
+      "tracks": []
+    },
+    {
+      "index": 41,
+      "timestamp_s": 20.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            -2.0,
+            93,
+            10.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "timestamp_s": 20.5,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            5.0,
+            93,
+            17.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "timestamp_s": 21.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            12.0,
+            93,
+            24.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "timestamp_s": 21.5,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            19.0,
+            93,
+            31.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "timestamp_s": 22.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            26.0,
+            93,
+            38.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "timestamp_s": 22.5,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            33.0,
+            93,
+            45.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "timestamp_s": 23.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            40.0,
+            93,
+            52.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "timestamp_s": 23.5,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            47.0,
+            93,
+            59.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "timestamp_s": 24.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            54.0,
+            93,
+            66.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "timestamp_s": 24.5,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            61.0,
+            93,
+            73.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "timestamp_s": 25.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            68.0,
+            93,
+            80.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "timestamp_s": 25.5,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            75.0,
+            93,
+            87.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "timestamp_s": 26.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            82.0,
+            93,
+            94.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "timestamp_s": 26.5,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            89.0,
+            93,
+            101.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "timestamp_s": 27.0,
+      "tracks": [
+        {
+          "id": 3,
+          "bbox": [
+            77,
+            96.0,
+            93,
+            108.0
+          ],
+          "category": "bus",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "timestamp_s": 27.5,
+      "tracks": []
+    },
+    {
+      "index": 57,
+      "timestamp_s": 28.0,
+      "tracks": []
+    },
+    {
+      "index": 58,
+      "timestamp_s": 28.5,
+      "tracks": []
+    },
+    {
+      "index": 59,
+      "timestamp_s": 29.0,
+      "tracks": []
+    },
+    {
+      "index": 60,
+      "timestamp_s": 29.5,
+      "tracks": []
+    },
+    {
+      "index": 61,
+      "timestamp_s": 30.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            -2.0,
+            113,
+            10.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "timestamp_s": 30.5,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            5.0,
+            113,
+            17.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "timestamp_s": 31.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            12.0,
+            113,
+            24.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "timestamp_s": 31.5,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            19.0,
+            113,
+            31.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "timestamp_s": 32.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            26.0,
+            113,
+            38.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "timestamp_s": 32.5,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            33.0,
+            113,
+            45.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "timestamp_s": 33.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            40.0,
+            113,
+            52.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "timestamp_s": 33.5,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            47.0,
+            113,
+            59.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "timestamp_s": 34.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            54.0,
+            113,
+            66.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "timestamp_s": 34.5,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            61.0,
+            113,
+            73.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "timestamp_s": 35.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            68.0,
+            113,
+            80.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "timestamp_s": 35.5,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            75.0,
+            113,
+            87.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "timestamp_s": 36.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            82.0,
+            113,
+            94.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "timestamp_s": 36.5,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            89.0,
+            113,
+            101.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "timestamp_s": 37.0,
+      "tracks": [
+        {
+          "id": 4,
+          "bbox": [
+            97,
+            96.0,
+            113,
+            108.0
+          ],
+          "category": "motorcycle",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "timestamp_s": 37.5,
+      "tracks": []
+    },
+    {
+      "index": 77,
+      "timestamp_s": 38.0,
+      "tracks": []
+    },
+    {
+      "index": 78,
+      "timestamp_s": 38.5,
+      "tracks": []
+    },
+    {
+      "index": 79,
+      "timestamp_s": 39.0,
+      "tracks": []
+    },
+    {
+      "index": 80,
+      "timestamp_s": 39.5,
+      "tracks": []
+    },
+    {
+      "index": 81,
+      "timestamp_s": 40.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            -2.0,
+            133,
+            10.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "timestamp_s": 40.5,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            5.0,
+            133,
+            17.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "timestamp_s": 41.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            12.0,
+            133,
+            24.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "timestamp_s": 41.5,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            19.0,
+            133,
+            31.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "timestamp_s": 42.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            26.0,
+            133,
+            38.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "timestamp_s": 42.5,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            33.0,
+            133,
+            45.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "timestamp_s": 43.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            40.0,
+            133,
+            52.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "timestamp_s": 43.5,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            47.0,
+            133,
+            59.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "timestamp_s": 44.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            54.0,
+            133,
+            66.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "timestamp_s": 44.5,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            61.0,
+            133,
+            73.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "timestamp_s": 45.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            68.0,
+            133,
+            80.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "timestamp_s": 45.5,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            75.0,
+            133,
+            87.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "timestamp_s": 46.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            82.0,
+            133,
+            94.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "timestamp_s": 46.5,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            89.0,
+            133,
+            101.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "timestamp_s": 47.0,
+      "tracks": [
+        {
+          "id": 5,
+          "bbox": [
+            117,
+            96.0,
+            133,
+            108.0
+          ],
+          "category": "car",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "timestamp_s": 47.5,
+      "tracks": []
+    },
+    {
+      "index": 97,
+      "timestamp_s": 48.0,
+      "tracks": []
+    },
+    {
+      "index": 98,
+      "timestamp_s": 48.5,
+      "tracks": []
+    },
+    {
+      "index": 99,
+      "timestamp_s": 49.0,
+      "tracks": []
+    },
+    {
+      "index": 100,
+      "timestamp_s": 49.5,
+      "tracks": []
+    },
+    {
+      "index": 101,
+      "timestamp_s": 50.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            -2.0,
+            153,
+            10.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "timestamp_s": 50.5,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            5.0,
+            153,
+            17.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "timestamp_s": 51.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            12.0,
+            153,
+            24.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "timestamp_s": 51.5,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            19.0,
+            153,
+            31.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "timestamp_s": 52.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            26.0,
+            153,
+            38.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "timestamp_s": 52.5,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            33.0,
+            153,
+            45.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "timestamp_s": 53.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            40.0,
+            153,
+            52.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "timestamp_s": 53.5,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            47.0,
+            153,
+            59.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "timestamp_s": 54.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            54.0,
+            153,
+            66.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "timestamp_s": 54.5,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            61.0,
+            153,
+            73.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "timestamp_s": 55.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            68.0,
+            153,
+            80.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "timestamp_s": 55.5,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            75.0,
+            153,
+            87.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "timestamp_s": 56.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            82.0,
+            153,
+            94.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 114,
+      "timestamp_s": 56.5,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            89.0,
+            153,
+            101.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "timestamp_s": 57.0,
+      "tracks": [
+        {
+          "id": 6,
+          "bbox": [
+            137,
+            96.0,
+            153,
+            108.0
+          ],
+          "category": "unsupported",
+          "confidence": 0.9,
+          "hits": 10,
+          "state": "confirmed"
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "timestamp_s": 57.5,
+      "tracks": []
+    },
+    {
+      "index": 117,
+      "timestamp_s": 58.0,
+      "tracks": []
+    },
+    {
+      "index": 118,
+      "timestamp_s": 58.5,
+      "tracks": []
+    },
+    {
+      "index": 119,
+      "timestamp_s": 59.0,
+      "tracks": []
+    },
+    {
+      "index": 120,
+      "timestamp_s": 59.5,
+      "tracks": []
+    }
+  ]
+}

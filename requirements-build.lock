@@ -1,0 +1,2 @@
+# Build helper only; runtime and test dependencies remain in requirements-dev.lock.
+setuptools==84.1.0

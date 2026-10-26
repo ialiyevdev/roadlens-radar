@@ -1,0 +1,140 @@
+.annotation-studio {
+  padding-bottom: 20px;
+  min-width: 0;
+}
+.annotation-studio > .panel-heading {
+  padding: 20px 20px 0;
+}
+.annotation-studio > .inline-error,
+.annotation-studio > p {
+  margin: 12px 20px;
+}
+.annotation-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  padding: 14px 20px;
+}
+.annotation-toolbar label,
+.annotation-editor label {
+  display: grid;
+  gap: 6px;
+  font-size: 11px;
+  color: #a7b3bd;
+}
+.annotation-toolbar input[type="number"] {
+  width: 100px;
+}
+.annotation-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 18px;
+  padding: 0 20px;
+}
+.annotation-layout > div {
+  min-width: 0;
+}
+.annotation-canvas {
+  width: 100%;
+  max-height: 650px;
+  display: block;
+  background: #090c0e;
+  touch-action: none;
+  cursor: crosshair;
+}
+.annotation-object rect,
+.annotation-draft {
+  fill: #bfdf9a15;
+  stroke: #bfdf9a;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+.annotation-object.selected rect {
+  stroke: #fff;
+}
+.annotation-object circle {
+  fill: #bfdf9a;
+  stroke: #161c20;
+  stroke-width: 2;
+  cursor: nwse-resize;
+}
+.annotation-object text,
+.annotation-prediction text {
+  font: 16px monospace;
+  fill: #d0e8b7;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: #101514;
+  stroke-width: 3px;
+}
+.annotation-object rect {
+  cursor: move;
+}
+.annotation-prediction {
+  pointer-events: none;
+}
+.annotation-prediction rect {
+  stroke: #d5aa63;
+  stroke-dasharray: 5 4;
+  stroke-width: 1.5;
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+.annotation-prediction text {
+  fill: #e1b875;
+}
+.annotation-editor {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+.annotation-box-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.annotation-box-inputs input {
+  min-width: 0;
+  width: 100%;
+}
+.annotation-editor .annotation-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.annotation-proposals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 20px;
+}
+.annotation-proposals h3 {
+  width: 100%;
+  font-size: 12px;
+}
+@media (max-width: 900px) {
+  .annotation-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .annotation-editor {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .annotation-editor > * {
+    min-width: 0;
+  }
+}
+@media (max-width: 500px) {
+  .annotation-toolbar,
+  .annotation-layout {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .annotation-editor {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "evidence": "synthetic projected corners and generated pixels; no physical camera, detection or speed validation",
+  "hardware": {
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_cpus": 12,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9",
+    "opencv": "4.14.0",
+    "opencv_threads": 12
+  },
+  "method": "10 warm-up remaps; independent timed cached apply calls; K'=K, same dimensions, no crop; CPU load affects timings",
+  "fit_ms": 27.549899998120964,
+  "synthetic_fit_rms_px": 1.0113916395621202e-05,
+  "maximum_focal_error_px": 0.0002822504746973209,
+  "resolutions": [
+    {
+      "width": 640,
+      "height": 480,
+      "map_initialization_ms": 8.639100000436883,
+      "cached_apply_mean_ms": 0.9106995001639007,
+      "cached_apply_median_ms": 0.8486000006087124,
+      "cached_apply_p95_ms": 1.2448599951312642,
+      "repetitions": 200
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "map_initialization_ms": 2.660500002093613,
+      "cached_apply_mean_ms": 2.0693020001635887,
+      "cached_apply_median_ms": 1.9245000003138557,
+      "cached_apply_p95_ms": 3.181375001440756,
+      "repetitions": 200
+    }
+  ]
+}
